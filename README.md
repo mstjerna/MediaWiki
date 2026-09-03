@@ -9,8 +9,8 @@ the tooling to turn it into a Genesys Knowledge JSON import file.
 | --- | --- |
 | `Alektum+Group-20260902114843.xml` | MediaWiki XML export (source of truth) |
 | `convert.py` | Converter (Python 3, standard library only) |
-| `genesys_full_migration_v8_final.json` | Generated Genesys import file |
-| `genesys_full_migration_v7_2.json` | Previous output, kept as formatting reference |
+| `genesys_full_migration_v9_final.json` | Generated Genesys import file |
+| `genesys_full_migration_v8_final.json` / `genesys_full_migration_v7_2.json` | Previous outputs, kept as formatting reference |
 | `1 (7).json` | Small validated sample of the accepted import format |
 | `test_convert.py` | Unit tests for the conversion rules |
 
@@ -21,7 +21,7 @@ python3 convert.py
 ```
 
 This reads `Alektum+Group-20260902114843.xml` and writes
-`genesys_full_migration_v8_final.json`, printing a summary of the number of
+`genesys_full_migration_v9_final.json`, printing a summary of the number of
 articles, categories, labels and converted wikitables.
 
 Other input/output paths can be supplied as arguments:
@@ -86,5 +86,5 @@ python3 -m unittest test_convert -v
   with:
 
   ```bash
-  python3 convert.py --validate genesys_full_migration_v8_final.json
+  python3 convert.py --validate genesys_full_migration_v9_final.json
   ```
