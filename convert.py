@@ -6,7 +6,7 @@ Usage:
 
 Defaults:
     input.xml   Alektum+Group-20260902114843.xml
-    output.json genesys_full_migration_v8_final.json
+    output.json genesys_full_migration_v9_final.json
 
 Only the Python standard library is used.
 """
@@ -20,7 +20,7 @@ import xml.etree.ElementTree as ET
 MW_NS = "{http://www.mediawiki.org/xml/export-0.11/}"
 
 DEFAULT_INPUT = "Alektum+Group-20260902114843.xml"
-DEFAULT_OUTPUT = "genesys_full_migration_v8_final.json"
+DEFAULT_OUTPUT = "genesys_full_migration_v9_final.json"
 
 DEFAULT_CATEGORY = "General"
 LABEL_COLOR = "#52e909"
