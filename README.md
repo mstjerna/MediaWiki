@@ -56,4 +56,23 @@ python3 -m unittest test_convert -v
   * tables repeating the same column pattern (e.g. `Land`/`Kod` four times)
     are split so that every pair becomes its own line (`Afghanistan: AF`),
   * three or more columns → `First (Second) - Rest`.
-* `[[File:…]]` references are intentionally not converted in this version.
+* `[[File:…]]` / `[[Fil:…]]` / `[[Image:…]]` / `[[Bild:…]]` references (and
+  `<gallery>` entries) are replaced in place with a visible placeholder so
+  editors know an image needs to be re-added manually:
+
+  ```
+  🔴 BILD SAKNAS FRÅN WIKI-IMPORTEN 🔴
+
+  Filreferens:
+  Foo.jpg
+
+  Lägg till manuellt i Genesys Knowledge.
+  ```
+
+  The placeholder keeps only the bare filename (namespace prefix and all
+  rendering options such as `thumb`, `300px`, `left`, `link=…` are stripped).
+  Text surrounding an inline image reference is preserved as its own
+  paragraph. Inside table cells (and list items), which are flattened to a
+  single line, the placeholder is rendered as one compact sentence instead:
+  `🔴 BILD SAKNAS FRÅN WIKI-IMPORTEN 🔴 – Filreferens: Foo.jpg – Lägg till
+  manuellt i Genesys Knowledge.`

@@ -30,8 +30,19 @@ TITLE_OVERRIDES = {"HR": "HR - Personal"}
 
 FILE_LINK_PREFIXES = ("file:", "image:", "fil:", "bild:", "media:")
 
+# Placeholder emitted in place of every dropped [[File:...]] / <gallery> entry
+# so editors know an article originally contained an image.
+PLACEHOLDER_TITLE = "\U0001F534 BILD SAKNAS FR\u00c5N WIKI-IMPORTEN \U0001F534"
+PLACEHOLDER_LABEL = "Filreferens:"
+PLACEHOLDER_FOOTER = "L\u00e4gg till manuellt i Genesys Knowledge."
+PLACEHOLDER_COMPACT = (
+    PLACEHOLDER_TITLE + " \u2013 " + PLACEHOLDER_LABEL + " {filename} \u2013 " + PLACEHOLDER_FOOTER
+)
+
 RE_COMMENT = re.compile(r"<!--.*?-->", re.S)
 RE_CATEGORY = re.compile(r"\[\[Category:([^\]|]+)(?:\|[^\]]*)?\]\]", re.I)
+RE_GALLERY_OPEN = re.compile(r"<gallery(?:\s[^>]*)?>", re.I)
+RE_GALLERY_CLOSE = re.compile(r"</gallery\s*>", re.I)
 RE_GALLERY = re.compile(r"<gallery[^>]*>.*?</gallery>", re.I | re.S)
 RE_NOWIKI = re.compile(r"</?nowiki[^>]*>", re.I)
 RE_TEMPLATE = re.compile(r"\{\{[^{}]*\}\}")
@@ -64,7 +75,9 @@ def clean_html(text):
 
 
 def strip_wiki_links(text):
-    """Resolve internal links to plain text and drop file/image links."""
+    """Resolve internal links to plain text; any remaining file/image links
+    are dropped here as a safety net (they should already have been handled
+    by `split_text_and_files`/`replace_file_links_compact` upstream)."""
     previous = None
     while previous != text:
         previous = text
@@ -78,6 +91,111 @@ def _replace_wikilink(match):
         return ""
     parts = target.split("|")
     return parts[-1].strip() if len(parts) > 1 else parts[0].strip()
+
+
+def iter_wikilinks(text):
+    """Yield (start, end, content) for top-level `[[...]]` spans in text.
+
+    Unlike `RE_WIKILINK`, this correctly matches the *outer* brackets of a
+    link even when its options contain further nested `[[...]]` links, e.g.
+    `[[File:A.png|thumb|see [[Ackord]]]]`.
+    """
+    i = 0
+    n = len(text)
+    while i < n:
+        if text[i:i + 2] == "[[":
+            depth = 1
+            j = i + 2
+            while j < n and depth:
+                if text[j:j + 2] == "[[":
+                    depth += 1
+                    j += 2
+                elif text[j:j + 2] == "]]":
+                    depth -= 1
+                    j += 2
+                else:
+                    j += 1
+            if depth == 0:
+                yield i, j, text[i + 2:j - 2]
+                i = j
+                continue
+        i += 1
+
+
+def is_file_link(content):
+    return content.strip().lower().startswith(FILE_LINK_PREFIXES)
+
+
+def file_link_name(content):
+    """Extract the bare filename from the contents of a `[[File:...]]` link."""
+    _, _, rest = content.partition(":")
+    return rest.split("|")[0].strip()
+
+
+def split_text_and_files(text):
+    """Split wikitext into a list of ("text", str) / ("file", filename)
+    segments, based on top-level file/image links."""
+    segments = []
+    pos = 0
+    for start, end, content in iter_wikilinks(text):
+        if not is_file_link(content):
+            continue
+        before = text[pos:start]
+        if before:
+            segments.append(("text", before))
+        segments.append(("file", file_link_name(content)))
+        pos = end
+    tail = text[pos:]
+    if tail or not segments:
+        segments.append(("text", tail))
+    return segments
+
+
+def replace_file_links_compact(text):
+    """Replace top-level file/image links with an inline placeholder string,
+    used where the surrounding structure (table cells, list items) cannot
+    hold separate placeholder paragraphs."""
+    pieces = []
+    pos = 0
+    for start, end, content in iter_wikilinks(text):
+        if not is_file_link(content):
+            continue
+        pieces.append(text[pos:start])
+        filename = file_link_name(content)
+        pieces.append(PLACEHOLDER_COMPACT.format(filename=filename))
+        pos = end
+    pieces.append(text[pos:])
+    return "".join(pieces)
+
+
+def placeholder_blocks(filename):
+    """The multi-paragraph placeholder emitted in place of a dropped image."""
+    return [
+        paragraph([text_block(PLACEHOLDER_TITLE, ["Bold"])]),
+        paragraph([]),
+        paragraph([text_block(PLACEHOLDER_LABEL)]),
+        paragraph([text_block(filename)]),
+        paragraph([]),
+        paragraph([text_block(PLACEHOLDER_FOOTER)]),
+    ]
+
+
+def gallery_filenames(gallery_lines):
+    """Extract filenames from the body lines of a `<gallery>...</gallery>` block."""
+    names = []
+    for line in gallery_lines:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        name = stripped.split("|")[0].strip()
+        lower = name.lower()
+        for prefix in FILE_LINK_PREFIXES:
+            if lower.startswith(prefix):
+                name = name[len(prefix):].strip()
+                break
+        if name:
+            names.append(name)
+    return names
 
 
 def split_marks(text):
@@ -231,7 +349,7 @@ def parse_table(lines):
 
 def row_to_blocks(cells):
     """Render one table row as the inline blocks of a list item."""
-    cells = [c for c in cells]
+    cells = [replace_file_links_compact(c) for c in cells]
     while cells and not cells[-1].strip():
         cells.pop()
     if not cells:
@@ -314,10 +432,24 @@ def extract_categories(text):
     return categories, RE_CATEGORY.sub("", text)
 
 
+def emit_text_or_placeholder(stripped, marks=None):
+    """Split a line on file/image links and return the blocks to append:
+    normal paragraphs for surrounding text, full placeholder blocks for
+    each image reference."""
+    blocks = []
+    for kind, content in split_text_and_files(stripped):
+        if kind == "file":
+            blocks.extend(placeholder_blocks(content))
+        else:
+            block = paragraph_from(content, marks=marks)
+            if block:
+                blocks.append(block)
+    return blocks
+
+
 def wikitext_to_blocks(text):
     """Convert the body of a MediaWiki page into Genesys body blocks."""
     text = RE_COMMENT.sub("", text)
-    text = RE_GALLERY.sub("", text)
     lines = text.split("\n")
     blocks = []
     tables = 0
@@ -326,6 +458,18 @@ def wikitext_to_blocks(text):
     while index < len(lines):
         line = lines[index]
         stripped = line.strip()
+
+        if RE_GALLERY_OPEN.match(stripped):
+            index += 1
+            gallery_lines = []
+            while index < len(lines) and not RE_GALLERY_CLOSE.search(lines[index]):
+                gallery_lines.append(lines[index])
+                index += 1
+            if index < len(lines):
+                index += 1
+            for filename in gallery_filenames(gallery_lines):
+                blocks.extend(placeholder_blocks(filename))
+            continue
 
         if stripped.startswith("{|"):
             depth = 1
@@ -352,9 +496,7 @@ def wikitext_to_blocks(text):
 
         if stripped.startswith("="):
             heading = stripped.strip("=").strip()
-            block = paragraph_from(heading, marks=["Bold"])
-            if block:
-                blocks.append(block)
+            blocks.extend(emit_text_or_placeholder(heading, marks=["Bold"]))
             index += 1
             continue
 
@@ -365,7 +507,8 @@ def wikitext_to_blocks(text):
                 item = lines[index].strip()
                 if not item or item[0] not in "*#" or item[0] != marker:
                     break
-                items.append(parse_inline(item.lstrip("*#").strip()))
+                item_text = replace_file_links_compact(item.lstrip("*#").strip())
+                items.append(parse_inline(item_text))
                 index += 1
             block = list_block(marker == "#", items)
             if block:
@@ -374,15 +517,12 @@ def wikitext_to_blocks(text):
 
         if stripped[0] in ";:":
             content = stripped.lstrip(";:").strip()
-            block = paragraph_from(content, marks=["Bold"] if stripped[0] == ";" else None)
-            if block:
-                blocks.append(block)
+            blocks.extend(emit_text_or_placeholder(
+                content, marks=["Bold"] if stripped[0] == ";" else None))
             index += 1
             continue
 
-        block = paragraph_from(stripped)
-        if block:
-            blocks.append(block)
+        blocks.extend(emit_text_or_placeholder(stripped))
         index += 1
 
     return blocks, tables
