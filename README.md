@@ -62,10 +62,8 @@ python3 -m unittest test_convert -v
 
   ```
   🔴 BILD SAKNAS FRÅN WIKI-IMPORTEN 🔴
-
   Filreferens:
   Foo.jpg
-
   Lägg till manuellt i Genesys Knowledge.
   ```
 
@@ -76,3 +74,18 @@ python3 -m unittest test_convert -v
   single line, the placeholder is rendered as one compact sentence instead:
   `🔴 BILD SAKNAS FRÅN WIKI-IMPORTEN 🔴 – Filreferens: Foo.jpg – Lägg till
   manuellt i Genesys Knowledge.`
+* Genesys rejects any `Paragraph` whose `paragraph.blocks` array is empty.
+  The converter never emits one: the image placeholder above has no blank
+  spacer paragraphs, and a final recursive sanitization pass
+  (`sanitize_blocks()` in `convert.py`) drops any other container block
+  whose block list ends up empty (e.g. a blank line left over once
+  surrounding markup has been stripped out) before the file is written.
+  `convert()` also runs a stricter recursive scan
+  (`find_empty_block_lists()`) over the whole generated document and
+  refuses to write the output if it finds any empty `blocks` array
+  anywhere. You can run the same check against an already-generated file
+  with:
+
+  ```bash
+  python3 convert.py --validate genesys_full_migration_v8_final.json
+  ```
