@@ -169,13 +169,16 @@ def replace_file_links_compact(text):
 
 
 def placeholder_blocks(filename):
-    """The multi-paragraph placeholder emitted in place of a dropped image."""
+    """The multi-paragraph placeholder emitted in place of a dropped image.
+
+    No blank spacer paragraphs are emitted: Genesys rejects any Paragraph
+    whose `blocks` array is empty, so the placeholder consists solely of
+    non-empty paragraphs.
+    """
     return [
         paragraph([text_block(PLACEHOLDER_TITLE, ["Bold"])]),
-        paragraph([]),
         paragraph([text_block(PLACEHOLDER_LABEL)]),
         paragraph([text_block(filename)]),
-        paragraph([]),
         paragraph([text_block(PLACEHOLDER_FOOTER)]),
     ]
 
@@ -275,6 +278,31 @@ def trim_blocks(blocks):
 
 def paragraph(blocks):
     return {"type": "Paragraph", "paragraph": {"blocks": blocks}}
+
+
+def sanitize_blocks(blocks):
+    """Final safety net: drop any container block whose block list ended up
+    empty, so a `paragraph.blocks` (or list) is never serialized empty.
+
+    Genesys rejects any Paragraph whose `blocks` array is empty; this can
+    happen for reasons other than the image placeholder (e.g. a blank line
+    left behind once other markup has been stripped out). Applied
+    recursively so nested structures (list items, table cells - which are
+    themselves rendered as list items) are covered by the same rule.
+    """
+    sanitized = []
+    for block in blocks:
+        block_type = block.get("type")
+        if block_type == "Paragraph":
+            if not block["paragraph"]["blocks"]:
+                continue
+        elif block_type in ("OrderedList", "UnorderedList"):
+            items = [item for item in block["list"]["blocks"] if item.get("blocks")]
+            if not items:
+                continue
+            block["list"]["blocks"] = items
+        sanitized.append(block)
+    return sanitized
 
 
 def paragraph_from(text, marks=None):
@@ -525,7 +553,31 @@ def wikitext_to_blocks(text):
         blocks.extend(emit_text_or_placeholder(stripped))
         index += 1
 
-    return blocks, tables
+    return sanitize_blocks(blocks), tables
+
+
+def find_empty_block_lists(node, path=""):
+    """Recursively scan a (possibly nested) JSON-like structure for any
+    `"blocks": []` container, returning a list of dotted/indexed paths where
+    an empty block list was found.
+
+    This is the final validation pass: `sanitize_blocks()` proactively
+    removes the empty Paragraph/List containers it knows about, but this
+    generic scan is a safety net that catches *any* empty `blocks` array
+    anywhere in the generated document tree, regardless of its shape.
+    """
+    violations = []
+    if isinstance(node, dict):
+        for key, value in node.items():
+            child_path = "{0}.{1}".format(path, key) if path else key
+            if key == "blocks" and isinstance(value, list) and not value:
+                violations.append(child_path)
+            else:
+                violations.extend(find_empty_block_lists(value, child_path))
+    elif isinstance(node, list):
+        for index, item in enumerate(node):
+            violations.extend(find_empty_block_lists(item, "{0}[{1}]".format(path, index)))
+    return violations
 
 
 def convert(input_path, output_path):
@@ -584,6 +636,12 @@ def convert(input_path, output_path):
         "labels": [{"name": name, "color": LABEL_COLOR} for name in sorted(labels)],
     }
 
+    violations = find_empty_block_lists(data)
+    if violations:
+        raise ValueError(
+            "Refusing to write output: empty block list(s) found at: {0}"
+            .format(", ".join(violations)))
+
     with open(output_path, "w", encoding="utf-8") as handle:
         json.dump(data, handle, ensure_ascii=False)
 
@@ -595,7 +653,28 @@ def convert(input_path, output_path):
     }
 
 
+def validate_file(path):
+    """Load a generated Genesys JSON file and check it for empty block
+    lists. Returns the list of violation paths (empty means the file is
+    clean). Used both as a standalone check (`convert.py --validate FILE`)
+    and from the test suite."""
+    with open(path, encoding="utf-8") as handle:
+        data = json.load(handle)
+    return find_empty_block_lists(data)
+
+
 def main(argv):
+    if len(argv) > 1 and argv[1] == "--validate":
+        path = argv[2] if len(argv) > 2 else DEFAULT_OUTPUT
+        violations = validate_file(path)
+        if violations:
+            print("Found {0} empty block list(s) in {1}:".format(len(violations), path))
+            for violation in violations:
+                print("  {0}".format(violation))
+            return 1
+        print("OK: no empty block lists found in {0}".format(path))
+        return 0
+
     input_path = argv[1] if len(argv) > 1 else DEFAULT_INPUT
     output_path = argv[2] if len(argv) > 2 else DEFAULT_OUTPUT
     summary = convert(input_path, output_path)

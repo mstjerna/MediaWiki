@@ -121,11 +121,13 @@ class ImagePlaceholderTests(unittest.TestCase):
     def assert_placeholder(self, blocks, filename):
         self.assertEqual(
             self.paragraph_texts(blocks),
-            [convert.PLACEHOLDER_TITLE, "", convert.PLACEHOLDER_LABEL,
-             filename, "", convert.PLACEHOLDER_FOOTER],
+            [convert.PLACEHOLDER_TITLE, convert.PLACEHOLDER_LABEL,
+             filename, convert.PLACEHOLDER_FOOTER],
         )
         self.assertEqual(blocks[0]["paragraph"]["blocks"][0]["text"]["marks"],
                           ["Bold"])
+        for block in blocks:
+            self.assertTrue(block["paragraph"]["blocks"])
 
     def test_standalone_image(self):
         blocks, _ = convert.wikitext_to_blocks(
@@ -138,8 +140,8 @@ class ImagePlaceholderTests(unittest.TestCase):
         self.assertEqual(blocks[0]["type"], "Paragraph")
         self.assertEqual(texts(blocks[0]["paragraph"]["blocks"]),
                           [("Se bilden", (), None)])
-        self.assert_placeholder(blocks[1:7], "Foo.jpg")
-        self.assertEqual(texts(blocks[7]["paragraph"]["blocks"]),
+        self.assert_placeholder(blocks[1:5], "Foo.jpg")
+        self.assertEqual(texts(blocks[5]["paragraph"]["blocks"]),
                           [("för mer information.", (), None)])
 
     def test_image_with_nested_caption(self):
@@ -153,8 +155,8 @@ class ImagePlaceholderTests(unittest.TestCase):
             "File:One.png\n"
             "File:Two.png|caption text\n"
             "</gallery>")
-        self.assert_placeholder(blocks[0:6], "One.png")
-        self.assert_placeholder(blocks[6:12], "Two.png")
+        self.assert_placeholder(blocks[0:4], "One.png")
+        self.assert_placeholder(blocks[4:8], "Two.png")
 
     def test_image_in_table_cell(self):
         blocks, tables = convert.wikitext_to_blocks(
@@ -181,6 +183,61 @@ class CategoryTests(unittest.TestCase):
             "Text [[Category:Backoffice]][[Category:Telefoni]][[Category:Sverige]]")
         self.assertEqual(categories, ["Backoffice", "Telefoni", "Sverige"])
         self.assertEqual(rest.strip(), "Text")
+
+
+def find_empty_block_lists(blocks):
+    """Recursively collect any empty `blocks` array found in a block tree
+    (Paragraph.paragraph.blocks, List.list.blocks, ListItem.blocks)."""
+    empties = []
+    for block in blocks:
+        block_type = block.get("type")
+        if block_type == "Paragraph":
+            if not block["paragraph"]["blocks"]:
+                empties.append(block)
+        elif block_type in ("OrderedList", "UnorderedList"):
+            items = block["list"]["blocks"]
+            if not items:
+                empties.append(block)
+            for item in items:
+                if not item.get("blocks"):
+                    empties.append(item)
+    return empties
+
+
+class SanitizationTests(unittest.TestCase):
+    def test_no_empty_paragraph_blocks_from_blank_source(self):
+        wikitext = (
+            "Rubrik\n\n\n"
+            "'''' ''''\n\n"
+            "----\n\n"
+            "<!-- a comment -->\n\n"
+            "<span class=\"x\"></span>\n\n"
+            "Sista raden."
+        )
+        blocks, _ = convert.wikitext_to_blocks(wikitext)
+        self.assertEqual(find_empty_block_lists(blocks), [])
+
+    def test_sanitize_blocks_drops_empty_paragraph(self):
+        blocks = [convert.paragraph([]), convert.paragraph(
+            [convert.text_block("kept")])]
+        sanitized = convert.sanitize_blocks(blocks)
+        self.assertEqual(len(sanitized), 1)
+        self.assertEqual(find_empty_block_lists(sanitized), [])
+
+    def test_placeholder_blocks_have_no_empty_paragraphs(self):
+        blocks = convert.placeholder_blocks("Foo.jpg")
+        self.assertEqual(find_empty_block_lists(blocks), [])
+
+
+class GeneratedOutputTests(unittest.TestCase):
+    def test_output_file_has_no_empty_block_lists(self):
+        import os
+        path = os.path.join(os.path.dirname(__file__) or ".",
+                             convert.DEFAULT_OUTPUT)
+        if not os.path.exists(path):
+            self.skipTest("{0} not present".format(path))
+        violations = convert.validate_file(path)
+        self.assertEqual(violations, [])
 
 
 if __name__ == "__main__":
