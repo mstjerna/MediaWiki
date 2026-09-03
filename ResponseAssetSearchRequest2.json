@@ -1,0 +1,1706 @@
+{
+  "total": 187,
+  "pageCount": 2,
+  "pageSize": 87,
+  "pageNumber": 2,
+  "results": [
+    {
+      "id": "09821287-22c3-458e-9945-46a97a89a409",
+      "name": "KFM-filer_1756825907023.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 25169,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/50d5f578-9eb2-47cc-a1da-3f565a4b48be.09821287-22c3-458e-9945-46a97a89a409.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:10:28.194Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:10:28.194Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/09821287-22c3-458e-9945-46a97a89a409"
+    },
+    {
+      "id": "4c4031a8-211b-4482-9e08-3c8f4a6cd189",
+      "name": "KFM-filer_1756825923153.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 51772,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/a19da5ea-73f5-40f8-ad84-8d9e2bcc9a62.4c4031a8-211b-4482-9e08-3c8f4a6cd189.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:10:34.125Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:10:34.125Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/4c4031a8-211b-4482-9e08-3c8f4a6cd189"
+    },
+    {
+      "id": "8dfcc851-f517-4692-bd15-da8b4824a4bf",
+      "name": "KFM-filer_1756825959942.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 182099,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/e9fc12af-12d6-4137-843d-5ca5d8859dc2.8dfcc851-f517-4692-bd15-da8b4824a4bf.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:10:40.051Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:10:40.051Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/8dfcc851-f517-4692-bd15-da8b4824a4bf"
+    },
+    {
+      "id": "4c2098ee-3c17-4da7-9853-10a0a774be34",
+      "name": "KFM-filer_1756825997772.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 72168,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/84ef2940-6175-4b54-8483-7fbd519ed08c.4c2098ee-3c17-4da7-9853-10a0a774be34.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:10:46.814Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:10:46.814Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/4c2098ee-3c17-4da7-9853-10a0a774be34"
+    },
+    {
+      "id": "835096c0-17e9-4781-bb50-427bf23c39ba",
+      "name": "KFM-filer_1756826013184.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 18056,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/5b904e20-39fb-4ed6-8449-e04505c7731c.835096c0-17e9-4781-bb50-427bf23c39ba.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:11:00.601Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:11:00.601Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/835096c0-17e9-4781-bb50-427bf23c39ba"
+    },
+    {
+      "id": "9b4ff83a-6e35-44ea-898b-ef66afe9e0c9",
+      "name": "KFM-filer_1756826042304.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 47309,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/6f7831aa-0dfe-403f-9d1c-fff0b8d00881.9b4ff83a-6e35-44ea-898b-ef66afe9e0c9.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:11:05.750Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:11:05.750Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/9b4ff83a-6e35-44ea-898b-ef66afe9e0c9"
+    },
+    {
+      "id": "6f8ca8f7-1c69-42e1-90b2-6c810aef441f",
+      "name": "KFM-filer_1756826248465.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 30381,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/e2a710c0-74d5-4d3c-840c-e5293bdf2a1f.6f8ca8f7-1c69-42e1-90b2-6c810aef441f.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:11:11.680Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:11:11.680Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/6f8ca8f7-1c69-42e1-90b2-6c810aef441f"
+    },
+    {
+      "id": "490f6dae-a3d3-4df1-ae5c-7710ed89097f",
+      "name": "KFM-filer_1756826341439.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 12515,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/f9deed7b-e165-4f2c-a7f5-35d4c375fd84.490f6dae-a3d3-4df1-ae5c-7710ed89097f.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:11:18.361Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:11:18.361Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/490f6dae-a3d3-4df1-ae5c-7710ed89097f"
+    },
+    {
+      "id": "25021301-6fb4-411c-98e4-557e81adcb5e",
+      "name": "KFM-filer_1756826357112.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 32463,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/d67fc78f-661d-40dd-b290-0fc0ead8f250.25021301-6fb4-411c-98e4-557e81adcb5e.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:11:28.775Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:11:28.775Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/25021301-6fb4-411c-98e4-557e81adcb5e"
+    },
+    {
+      "id": "d8a41b9b-3f30-4f1f-bf64-8e368ba70ac9",
+      "name": "KFM-filer_1756826554624.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 20647,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/aaf3a7b9-95be-4d22-8e5c-8b02ef0b8b93.d8a41b9b-3f30-4f1f-bf64-8e368ba70ac9.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:11:44.734Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:11:44.734Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/d8a41b9b-3f30-4f1f-bf64-8e368ba70ac9"
+    },
+    {
+      "id": "08267d56-30b3-4f54-bc89-1b28f06bbb16",
+      "name": "KFM-filer_1756826631293.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 29760,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/643d0983-2bd6-4660-973a-85e7c9aba714.08267d56-30b3-4f54-bc89-1b28f06bbb16.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:11:50.670Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:11:50.670Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/08267d56-30b3-4f54-bc89-1b28f06bbb16"
+    },
+    {
+      "id": "38c4068f-73aa-491f-aa67-221a3329c414",
+      "name": "KFM-filer_1756826675129.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 28696,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/e1700002-3774-4364-95ec-716b593fae44.38c4068f-73aa-491f-aa67-221a3329c414.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:11:56.655Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:11:56.655Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/38c4068f-73aa-491f-aa67-221a3329c414"
+    },
+    {
+      "id": "aa0954c4-d183-4139-8907-52ef883ad527",
+      "name": "KFM-filer_1756827213966.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 92722,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/ba910861-7e39-44e9-bb43-026cf79e00db.aa0954c4-d183-4139-8907-52ef883ad527.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:12:02.532Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:12:02.532Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/aa0954c4-d183-4139-8907-52ef883ad527"
+    },
+    {
+      "id": "4a574113-1f04-4321-aefc-f4189bfdbb11",
+      "name": "KFM-filer_1762509166263.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 31018,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/6540c121-4b1b-4f37-8c31-ed98e5d03f9a.4a574113-1f04-4321-aefc-f4189bfdbb11.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:12:11.069Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:12:11.069Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/4a574113-1f04-4321-aefc-f4189bfdbb11"
+    },
+    {
+      "id": "70b21b6c-b98f-4d9e-b2d5-c899bcd33e62",
+      "name": "KFM-filer_1762509304289.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 28656,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/fdb4a674-07b8-440c-8df1-3840acc6020c.70b21b6c-b98f-4d9e-b2d5-c899bcd33e62.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:12:23.913Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:12:23.913Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/70b21b6c-b98f-4d9e-b2d5-c899bcd33e62"
+    },
+    {
+      "id": "cd7f4147-994e-40be-93a3-4feec9d537e6",
+      "name": "KFM-filer_1762509410633.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 50522,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/18b77078-68bd-4eae-bb91-24c9adfe7fa4.cd7f4147-994e-40be-93a3-4feec9d537e6.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:12:28.878Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:12:28.878Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/cd7f4147-994e-40be-93a3-4feec9d537e6"
+    },
+    {
+      "id": "4e81f1aa-b934-4127-8fd6-ef8825102b56",
+      "name": "KFM-filer_1762509445249.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 52860,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/242c5cae-882e-43f6-9119-6c90f87d474b.4e81f1aa-b934-4127-8fd6-ef8825102b56.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:12:34.947Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:12:34.947Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/4e81f1aa-b934-4127-8fd6-ef8825102b56"
+    },
+    {
+      "id": "57661d43-36e5-45cf-9732-b173d7716f00",
+      "name": "KFM-filer_1762509496788.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 27050,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/5e071a6f-b0f1-41a6-a7d2-cec65058728a.57661d43-36e5-45cf-9732-b173d7716f00.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:12:40.907Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:12:40.907Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/57661d43-36e5-45cf-9732-b173d7716f00"
+    },
+    {
+      "id": "2f14329e-78cf-44be-bd46-82aa542b4ef1",
+      "name": "KFM-filer_1762509737068.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 19215,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/3570c4a8-c3a1-4716-9d40-1f41a14d240e.2f14329e-78cf-44be-bd46-82aa542b4ef1.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:12:48.488Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:12:48.488Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/2f14329e-78cf-44be-bd46-82aa542b4ef1"
+    },
+    {
+      "id": "058c089d-5eda-4822-919c-9b7df176b20c",
+      "name": "KFM-filer_1762509766146.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 35072,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/c017f866-c5b3-46f9-89e1-5a3ee72d63c6.058c089d-5eda-4822-919c-9b7df176b20c.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:12:59.771Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:12:59.771Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/058c089d-5eda-4822-919c-9b7df176b20c"
+    },
+    {
+      "id": "39d9d541-aeb7-4304-b27f-6e4fe4cb9729",
+      "name": "KFM-filer_1762509862847.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 48782,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/15d65e20-7c1f-4d9f-820c-a6cbfdaf54a6.39d9d541-aeb7-4304-b27f-6e4fe4cb9729.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:13:05.557Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:13:05.557Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/39d9d541-aeb7-4304-b27f-6e4fe4cb9729"
+    },
+    {
+      "id": "ed82d037-5d30-4e27-b322-92d49c13d4ee",
+      "name": "KFM-filer_1762509889502.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 90081,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/0ca9a941-0198-48b0-ab15-19604b3b3df3.ed82d037-5d30-4e27-b322-92d49c13d4ee.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:13:11.488Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:13:11.488Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/ed82d037-5d30-4e27-b322-92d49c13d4ee"
+    },
+    {
+      "id": "e854b3ab-4962-4061-9f3a-ab6bb0c0f3bf",
+      "name": "KFM-filer_1762509919193.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 48182,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/e262a793-3f9d-4027-a74c-021c92e1d888.e854b3ab-4962-4061-9f3a-ab6bb0c0f3bf.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:13:16.544Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:13:16.544Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/e854b3ab-4962-4061-9f3a-ab6bb0c0f3bf"
+    },
+    {
+      "id": "b6a20726-86ec-4bed-9df1-cab6d688fb4b",
+      "name": "KFM-filer_1762509955146.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 18074,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/19e5bd8f-ba53-48a1-92ac-4382a7ebc780.b6a20726-86ec-4bed-9df1-cab6d688fb4b.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:13:25.095Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:13:25.095Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/b6a20726-86ec-4bed-9df1-cab6d688fb4b"
+    },
+    {
+      "id": "0321993a-bfc0-4da6-9959-00e5b50521f5",
+      "name": "KFM-filer_1762510214709.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 40213,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/88c89fc6-c089-45f8-8a19-95d1023c264b.0321993a-bfc0-4da6-9959-00e5b50521f5.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:13:44.558Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:13:44.558Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/0321993a-bfc0-4da6-9959-00e5b50521f5"
+    },
+    {
+      "id": "4343e0f7-fa29-4fee-a55f-8b44bf1c5557",
+      "name": "KFM-filer_1762510373905.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 125073,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/9b9d573d-c7a9-494e-9543-2a210a2e9e9e.4343e0f7-fa29-4fee-a55f-8b44bf1c5557.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:13:49.784Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:13:49.784Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/4343e0f7-fa29-4fee-a55f-8b44bf1c5557"
+    },
+    {
+      "id": "273fc925-563f-4244-b8e2-3775758760b1",
+      "name": "KFM-filer_1762510415881.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 28540,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/d1870c2b-0743-4f9d-9e75-d66d22e1c30a.273fc925-563f-4244-b8e2-3775758760b1.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:13:55.797Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:13:55.797Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/273fc925-563f-4244-b8e2-3775758760b1"
+    },
+    {
+      "id": "b0a57180-2fa0-490c-953b-28e7c0186fc0",
+      "name": "Kivra_JA_status_Extrafält.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 30774,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/e4d35d43-2686-4b83-843e-284ae6581489.b0a57180-2fa0-490c-953b-28e7c0186fc0.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:14:00.882Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:00.882Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/b0a57180-2fa0-490c-953b-28e7c0186fc0"
+    },
+    {
+      "id": "6b47e5ec-78a0-4b62-9244-caa966995ca8",
+      "name": "Kivra_NEJ_status_Extrafält.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 34688,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/bd3be55e-2c5a-480b-9322-6f2f169e78cb.6b47e5ec-78a0-4b62-9244-caa966995ca8.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:14:05.963Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:05.963Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/6b47e5ec-78a0-4b62-9244-caa966995ca8"
+    },
+    {
+      "id": "ed00ed18-1ef9-4c3b-9eef-c0c6441df4b0",
+      "name": "KivraForm_besvarad.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 34446,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/090c9a79-dcc5-429b-9c64-fa199a6f5a2f.ed00ed18-1ef9-4c3b-9eef-c0c6441df4b0.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:14:11.979Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:11.979Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/ed00ed18-1ef9-4c3b-9eef-c0c6441df4b0"
+    },
+    {
+      "id": "4c9a71a6-04e3-4983-bdbe-6746e07634f0",
+      "name": "KivraForm_svarssida.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 36393,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/158aefde-47e4-4fc3-b932-39bc4529442a.4c9a71a6-04e3-4983-bdbe-6746e07634f0.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:14:17.892Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:17.892Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/4c9a71a6-04e3-4983-bdbe-6746e07634f0"
+    },
+    {
+      "id": "2f65c952-6a64-49c9-987a-f9f1c525327e",
+      "name": "KivraForm_Tink.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 32622,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/10d3fb13-b206-44e0-8499-9e214f88300b.2f65c952-6a64-49c9-987a-f9f1c525327e.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:14:24.699Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:24.699Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/2f65c952-6a64-49c9-987a-f9f1c525327e"
+    },
+    {
+      "id": "a6ed7139-c9dd-490b-9499-cbb588238f35",
+      "name": "Konkurs2.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 61148,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/8b8142aa-c832-44dc-aa39-ef37b7a9201b.a6ed7139-c9dd-490b-9499-cbb588238f35.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:14:29.735Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:29.735Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/a6ed7139-c9dd-490b-9499-cbb588238f35"
+    },
+    {
+      "id": "0960a805-893a-4658-b1a9-f32af9797212",
+      "name": "Kontrollera_verkställighetsfliken_vid_dubbla_ansökningar_om_verkställighet_1785220570524.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 38412,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/c57a65f8-a357-48c0-a8e4-dd4645b746c9.0960a805-893a-4658-b1a9-f32af9797212.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:14:35.642Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:35.642Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/0960a805-893a-4658-b1a9-f32af9797212"
+    },
+    {
+      "id": "9be5bbff-3e11-48ca-9a69-fe02ad647f19",
+      "name": "Kopiamejlstruktur.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 367760,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/dc47f31a-b83d-4c2d-aaf8-74c84ce719a6.9be5bbff-3e11-48ca-9a69-fe02ad647f19.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:14:41.703Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:41.703Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/9be5bbff-3e11-48ca-9a69-fe02ad647f19"
+    },
+    {
+      "id": "a7a0d7f4-e864-4af0-8b9e-3e2b6b9ff581",
+      "name": "Lathund_konkurs.pdf",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 210192,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/a4569dbc-bbbe-4a85-8848-3c6cd67d9440.a7a0d7f4-e864-4af0-8b9e-3e2b6b9ff581.pdf",
+      "contentType": "application/pdf",
+      "dateCreated": "2026-09-03T12:14:47.548Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:47.548Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/a7a0d7f4-e864-4af0-8b9e-3e2b6b9ff581"
+    },
+    {
+      "id": "4593897b-5824-4a05-97d1-d2fd3df601e4",
+      "name": "Leveransadress.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 44180,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/579d5add-e508-4277-9cf8-58e61ecdcaa3.4593897b-5824-4a05-97d1-d2fd3df601e4.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:14:53.645Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:53.645Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/4593897b-5824-4a05-97d1-d2fd3df601e4"
+    },
+    {
+      "id": "fb42e3c7-c80b-4670-825f-6a6b2028aef3",
+      "name": "Lista_oplacerade_(retuscherad).jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 124500,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/e4b9034e-dfea-4a07-9cc1-a15873a967e0.fb42e3c7-c80b-4670-825f-6a6b2028aef3.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:14:59.602Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:14:59.602Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/fb42e3c7-c80b-4670-825f-6a6b2028aef3"
+    },
+    {
+      "id": "7782e0cf-c73a-49b7-966f-32f759a4ceb0",
+      "name": "Lsm-brev_(1).jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 54455,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/44e8ee50-6c75-4649-9d93-66ca68cb2a69.7782e0cf-c73a-49b7-966f-32f759a4ceb0.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:15:05.555Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:15:05.555Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/7782e0cf-c73a-49b7-966f-32f759a4ceb0"
+    },
+    {
+      "id": "fa57b2da-1efc-41cd-9ac7-0f6644a288dd",
+      "name": "Myntro_Collect_AB_primary_RGB.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 116075,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/bcbe2d90-fbae-4bbd-8c5b-bf5466840c91.fa57b2da-1efc-41cd-9ac7-0f6644a288dd.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:15:26.754Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:15:26.754Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/fa57b2da-1efc-41cd-9ac7-0f6644a288dd"
+    },
+    {
+      "id": "4e4efa12-99ee-47e9-b533-c0ef5e895cce",
+      "name": "naststegbegratg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 55928,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/367260dc-ee5f-43e0-b48b-9e3340e5c49f.4e4efa12-99ee-47e9-b533-c0ef5e895cce.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:15:31.840Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:15:31.840Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/4e4efa12-99ee-47e9-b533-c0ef5e895cce"
+    },
+    {
+      "id": "e90adf8e-b318-4aac-9cea-4253085858e9",
+      "name": "Neds.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 20123,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/fec196ee-9634-4be8-857b-bc9b182bc591.e90adf8e-b318-4aac-9cea-4253085858e9.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:15:37.735Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:15:37.735Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/e90adf8e-b318-4aac-9cea-4253085858e9"
+    },
+    {
+      "id": "c93c5165-4b37-4a93-ac29-536d85c0ee85",
+      "name": "Nedsatt1.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 24890,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/c869483c-10e8-4642-a7ec-cc58d66a5ef3.c93c5165-4b37-4a93-ac29-536d85c0ee85.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:15:45.443Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:15:45.443Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/c93c5165-4b37-4a93-ac29-536d85c0ee85"
+    },
+    {
+      "id": "7c2f07c4-e7a8-41e3-87af-2f4756788dc5",
+      "name": "notering.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 119613,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/ad5136b0-859e-4423-bf0d-b085bf584481.7c2f07c4-e7a8-41e3-87af-2f4756788dc5.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:15:51.542Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:15:51.542Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/7c2f07c4-e7a8-41e3-87af-2f4756788dc5"
+    },
+    {
+      "id": "422e523e-e7bb-4d27-9655-a483efecf2d3",
+      "name": "Ny_Presentation_Client_Accounting_Utbildning_Del_1.pdf",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 1033134,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/9fa27fe4-d8e6-4df8-bba5-e702861f4bd1.422e523e-e7bb-4d27-9655-a483efecf2d3.pdf",
+      "contentType": "application/pdf",
+      "dateCreated": "2026-09-03T12:15:58.199Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:15:58.199Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/422e523e-e7bb-4d27-9655-a483efecf2d3"
+    },
+    {
+      "id": "73b3ec1d-a9ee-47d7-b721-40304abec7c3",
+      "name": "ombud1.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 51293,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/304ae295-02ba-46d2-bc81-e9a0e8961c0d.73b3ec1d-a9ee-47d7-b721-40304abec7c3.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:16:03.471Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:16:03.471Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/73b3ec1d-a9ee-47d7-b721-40304abec7c3"
+    },
+    {
+      "id": "d6814765-63fd-42c0-98c6-bc4c4e66dccf",
+      "name": "OPEX.CE.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 228994,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/19673d09-0b4d-4155-88bf-06a914a200a2.d6814765-63fd-42c0-98c6-bc4c4e66dccf.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:16:09.327Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:16:09.327Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/d6814765-63fd-42c0-98c6-bc4c4e66dccf"
+    },
+    {
+      "id": "d78da8b7-b4bd-4599-a3ba-3298fe643141",
+      "name": "Partslyckad1klar.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 33738,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/7301b7cb-1048-441e-9cf2-bb3b5d3e2f10.d78da8b7-b4bd-4599-a3ba-3298fe643141.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:24:19.410Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:24:19.410Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/d78da8b7-b4bd-4599-a3ba-3298fe643141"
+    },
+    {
+      "id": "67945aeb-2bd7-4a37-aebe-a1c6c1463a64",
+      "name": "Paymate-Manual-2024.pdf",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 1461656,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/4525ee3d-30a4-4513-96a7-ad90ce4744bc.67945aeb-2bd7-4a37-aebe-a1c6c1463a64.pdf",
+      "contentType": "application/pdf",
+      "dateCreated": "2026-09-03T12:24:27.007Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:24:27.007Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/67945aeb-2bd7-4a37-aebe-a1c6c1463a64"
+    },
+    {
+      "id": "a990e162-199f-4f0c-a96e-17f3083bfaea",
+      "name": "Picture2bonprix.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 53965,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/effd910d-e58d-4fc6-b7de-59dcf91097a0.a990e162-199f-4f0c-a96e-17f3083bfaea.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:24:47.535Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:24:47.535Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/a990e162-199f-4f0c-a96e-17f3083bfaea"
+    },
+    {
+      "id": "651db268-f98d-4f04-8497-4cd5b9477437",
+      "name": "Picture3bonpri.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 65466,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/7f531b0d-4ff0-44c0-aaea-b871f2cf8e83.651db268-f98d-4f04-8497-4cd5b9477437.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:28:17.685Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:28:17.685Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/651db268-f98d-4f04-8497-4cd5b9477437"
+    },
+    {
+      "id": "0da45be7-1edf-475f-ba74-e09aa0b01291",
+      "name": "Picturebomprox1.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 1193,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/060c1f15-5762-4af6-887d-d189c6cb43ff.0da45be7-1edf-475f-ba74-e09aa0b01291.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:28:23.532Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:28:23.532Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/0da45be7-1edf-475f-ba74-e09aa0b01291"
+    },
+    {
+      "id": "0cd30fa4-8eac-41b9-954a-870b637bf113",
+      "name": "process-parts.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 88795,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/97dd0599-5b98-4ba3-b37d-3b902104744f.0cd30fa4-8eac-41b9-954a-870b637bf113.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:28:30.452Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:28:30.452Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/0cd30fa4-8eac-41b9-954a-870b637bf113"
+    },
+    {
+      "id": "de7385a2-86e2-41c3-aea6-6ed545c227f0",
+      "name": "Rutin-hogkostnadskrediter.pdf",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 1136889,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/c356978b-4d83-4094-b975-12620936a2da.de7385a2-86e2-41c3-aea6-6ed545c227f0.pdf",
+      "contentType": "application/pdf",
+      "dateCreated": "2026-09-03T12:29:01.769Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:29:01.769Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/de7385a2-86e2-41c3-aea6-6ed545c227f0"
+    },
+    {
+      "id": "37b9d4cd-e214-403d-bf64-786b5fe21271",
+      "name": "Rutinbeskrivning_-_rekonstruktion_och_likvidation.pdf",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 169941,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/d597fca8-9f22-4de9-af77-f4d7df4884fd.37b9d4cd-e214-403d-bf64-786b5fe21271.pdf",
+      "contentType": "application/pdf",
+      "dateCreated": "2026-09-03T12:28:55.859Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:28:55.859Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/37b9d4cd-e214-403d-bf64-786b5fe21271"
+    },
+    {
+      "id": "1e030115-98ca-4534-b82c-5be8fbbe3a66",
+      "name": "RÄNTA1.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 89769,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/9125d313-ae69-4fb9-8f69-b125094bf250.1e030115-98ca-4534-b82c-5be8fbbe3a66.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:28:37.883Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:28:37.883Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/1e030115-98ca-4534-b82c-5be8fbbe3a66"
+    },
+    {
+      "id": "581f9320-1cc7-4761-9b56-0b542f66f73a",
+      "name": "RÄNTA2.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 92212,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/ad76a5f2-7d2d-4b00-b587-ee16ce08a34d.581f9320-1cc7-4761-9b56-0b542f66f73a.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:28:44.012Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:28:44.012Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/581f9320-1cc7-4761-9b56-0b542f66f73a"
+    },
+    {
+      "id": "ed69fef2-8029-4eb5-a50f-8f41c57d05b7",
+      "name": "rätt-M-C.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 41561,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/673cc3eb-eadd-47c5-95cd-55cf500c6ede.ed69fef2-8029-4eb5-a50f-8f41c57d05b7.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:28:49.845Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:28:49.845Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/ed69fef2-8029-4eb5-a50f-8f41c57d05b7"
+    },
+    {
+      "id": "134a680f-edc2-4bab-9951-1abcf157ed76",
+      "name": "Samlingsakt1.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 155066,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/2264c129-c8b4-4639-b857-15831a5190b3.134a680f-edc2-4bab-9951-1abcf157ed76.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:29:42.521Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:29:42.521Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/134a680f-edc2-4bab-9951-1abcf157ed76"
+    },
+    {
+      "id": "4e6b85ff-6368-4c05-87c7-ccb198a1cfaa",
+      "name": "Samlingsakt1.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 155066,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/8ce96729-441c-41c5-9646-b41087078468.4e6b85ff-6368-4c05-87c7-ccb198a1cfaa.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:29:48.667Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:29:48.667Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/4e6b85ff-6368-4c05-87c7-ccb198a1cfaa"
+    },
+    {
+      "id": "a97d4bdb-fce6-4f11-b1f7-cb51d04128ae",
+      "name": "Samlingsakt2.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 101686,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/8fcf7d74-6a14-4d11-b7cf-252a167c3668.a97d4bdb-fce6-4f11-b1f7-cb51d04128ae.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:29:53.813Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:29:53.813Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/a97d4bdb-fce6-4f11-b1f7-cb51d04128ae"
+    },
+    {
+      "id": "815d8a8e-b00f-47e2-b650-8e2e959f7c43",
+      "name": "Samlingsakt2.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 101686,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/7434aca2-a858-4bcb-9b21-0e1863c77169.815d8a8e-b00f-47e2-b650-8e2e959f7c43.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:30:03.109Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:30:03.109Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/815d8a8e-b00f-47e2-b650-8e2e959f7c43"
+    },
+    {
+      "id": "7b3d84a9-0f6a-43d2-bbf1-eae5867a1556",
+      "name": "Screenshot_2025-11-10_141433.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 3712028,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/55646396-3a77-466f-a091-7a0dbecb9013.7b3d84a9-0f6a-43d2-bbf1-eae5867a1556.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:30:10.671Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:30:10.671Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/7b3d84a9-0f6a-43d2-bbf1-eae5867a1556"
+    },
+    {
+      "id": "26a3cd72-c866-4be2-83cc-f470e0138905",
+      "name": "Screenshot_2025-11-10_141459.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 3709114,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/ab799e35-ba4d-4f5e-8593-715335fa13b7.26a3cd72-c866-4be2-83cc-f470e0138905.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:30:17.587Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:30:17.587Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/26a3cd72-c866-4be2-83cc-f470e0138905"
+    },
+    {
+      "id": "1ef6ec26-cdc7-4365-a855-402d76536ad2",
+      "name": "Screenshot_2025-12-16_113233.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 126784,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/fa9e2830-e327-4eba-a6dd-57b510d4a266.1ef6ec26-cdc7-4365-a855-402d76536ad2.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:30:23.524Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:30:23.524Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/1ef6ec26-cdc7-4365-a855-402d76536ad2"
+    },
+    {
+      "id": "49c07f4b-c44b-49ea-88fc-ebefe92cda25",
+      "name": "SI.S.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 140637,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/415f2db5-2bb4-472e-8df2-dbbeac0db0ff.49c07f4b-c44b-49ea-88fc-ebefe92cda25.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:30:30.292Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:30:30.292Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/49c07f4b-c44b-49ea-88fc-ebefe92cda25"
+    },
+    {
+      "id": "dacb7669-4628-4386-859e-7dd7ad56110b",
+      "name": "Skuldsanering3.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 68747,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/a965402b-473c-4b6f-99e1-f4eaf6c7fc61.dacb7669-4628-4386-859e-7dd7ad56110b.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:30:39.751Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:30:39.751Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/dacb7669-4628-4386-859e-7dd7ad56110b"
+    },
+    {
+      "id": "5c94dfe5-effa-42f2-b8e4-0039ee8133ac",
+      "name": "Status_-Abroad.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 129570,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/b9f82d39-6a35-494f-a8f9-88b865d3ab08.5c94dfe5-effa-42f2-b8e4-0039ee8133ac.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:30:53.208Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:30:53.208Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/5c94dfe5-effa-42f2-b8e4-0039ee8133ac"
+    },
+    {
+      "id": "db1a25c5-3b4a-452d-8892-8c2eca1367de",
+      "name": "substitution.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 65170,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/fd17d826-47e2-4d5b-a7bc-c83d19806ba8.db1a25c5-3b4a-452d-8892-8c2eca1367de.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-05-06T14:02:22.714Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-05-06T14:02:22.714Z",
+      "responses": [
+        {
+          "id": "fac9cc61-d151-4be4-bec1-557288dfdebe",
+          "name": "Template07",
+          "selfUri": "/api/v2/responsemanagement/responses/fac9cc61-d151-4be4-bec1-557288dfdebe"
+        },
+        {
+          "id": "b1b62005-feef-46fe-84cd-0ef1cb7de4a0",
+          "name": "Template08",
+          "selfUri": "/api/v2/responsemanagement/responses/b1b62005-feef-46fe-84cd-0ef1cb7de4a0"
+        },
+        {
+          "id": "3fedaaf7-793f-4945-a002-06079786c967",
+          "name": "Template09",
+          "selfUri": "/api/v2/responsemanagement/responses/3fedaaf7-793f-4945-a002-06079786c967"
+        },
+        {
+          "id": "74265817-fc3b-4df9-9d70-ecb256df7f39",
+          "name": "Template10",
+          "selfUri": "/api/v2/responsemanagement/responses/74265817-fc3b-4df9-9d70-ecb256df7f39"
+        },
+        {
+          "id": "3f7c6071-5ef7-411b-8a85-4867ac302995",
+          "name": "Template11",
+          "selfUri": "/api/v2/responsemanagement/responses/3f7c6071-5ef7-411b-8a85-4867ac302995"
+        },
+        {
+          "id": "0cf4ca0c-9fc6-4ce4-bef9-48b5743f69bc",
+          "name": "Template12",
+          "selfUri": "/api/v2/responsemanagement/responses/0cf4ca0c-9fc6-4ce4-bef9-48b5743f69bc"
+        },
+        {
+          "id": "df5292fb-5604-4670-9648-53403a7783c8",
+          "name": "Template13",
+          "selfUri": "/api/v2/responsemanagement/responses/df5292fb-5604-4670-9648-53403a7783c8"
+        },
+        {
+          "id": "86304fbd-08b5-4539-9388-3f09d7cf0014",
+          "name": "Template14",
+          "selfUri": "/api/v2/responsemanagement/responses/86304fbd-08b5-4539-9388-3f09d7cf0014"
+        },
+        {
+          "id": "74126ead-d5a5-4719-bee9-097d6d39e78b",
+          "name": "Template15",
+          "selfUri": "/api/v2/responsemanagement/responses/74126ead-d5a5-4719-bee9-097d6d39e78b"
+        },
+        {
+          "id": "0d25e8eb-fdce-41b0-a8c4-f9ca75c6096d",
+          "name": "Template16",
+          "selfUri": "/api/v2/responsemanagement/responses/0d25e8eb-fdce-41b0-a8c4-f9ca75c6096d"
+        },
+        {
+          "id": "e702745b-db62-473c-b179-a802b96b447a",
+          "name": "Template17",
+          "selfUri": "/api/v2/responsemanagement/responses/e702745b-db62-473c-b179-a802b96b447a"
+        },
+        {
+          "id": "fcce7ebd-d0fb-4bac-a6ae-b0764822adfb",
+          "name": "Template18",
+          "selfUri": "/api/v2/responsemanagement/responses/fcce7ebd-d0fb-4bac-a6ae-b0764822adfb"
+        },
+        {
+          "id": "9e4d2702-8257-4f0b-83c8-be7ab1ec5f37",
+          "name": "Template19",
+          "selfUri": "/api/v2/responsemanagement/responses/9e4d2702-8257-4f0b-83c8-be7ab1ec5f37"
+        },
+        {
+          "id": "71635ee7-05ff-4dfa-926b-5c7526137dc1",
+          "name": "Template19",
+          "selfUri": "/api/v2/responsemanagement/responses/71635ee7-05ff-4dfa-926b-5c7526137dc1"
+        },
+        {
+          "id": "6a51bdff-2017-4be1-b2e1-acb9db84cbd1",
+          "name": "Template20",
+          "selfUri": "/api/v2/responsemanagement/responses/6a51bdff-2017-4be1-b2e1-acb9db84cbd1"
+        },
+        {
+          "id": "087698e2-3d83-4737-982e-d11f508b506a",
+          "name": "Template20",
+          "selfUri": "/api/v2/responsemanagement/responses/087698e2-3d83-4737-982e-d11f508b506a"
+        },
+        {
+          "id": "8a041452-5817-4955-8564-476840e28306",
+          "name": "Template21",
+          "selfUri": "/api/v2/responsemanagement/responses/8a041452-5817-4955-8564-476840e28306"
+        },
+        {
+          "id": "1f3a1490-6c6f-4d42-ae67-fc53a95a3167",
+          "name": "Template22",
+          "selfUri": "/api/v2/responsemanagement/responses/1f3a1490-6c6f-4d42-ae67-fc53a95a3167"
+        },
+        {
+          "id": "0ed140e5-6523-4ceb-944d-e152d480117a",
+          "name": "Template23",
+          "selfUri": "/api/v2/responsemanagement/responses/0ed140e5-6523-4ceb-944d-e152d480117a"
+        },
+        {
+          "id": "f7285552-1a7d-4248-9de4-1548e90ab9f0",
+          "name": "Template24",
+          "selfUri": "/api/v2/responsemanagement/responses/f7285552-1a7d-4248-9de4-1548e90ab9f0"
+        },
+        {
+          "id": "9d5e47d7-3264-4b61-a068-da14d391da17",
+          "name": "Template25",
+          "selfUri": "/api/v2/responsemanagement/responses/9d5e47d7-3264-4b61-a068-da14d391da17"
+        },
+        {
+          "id": "29391ac3-01f6-4fd5-af05-236f8eb279db",
+          "name": "Template26",
+          "selfUri": "/api/v2/responsemanagement/responses/29391ac3-01f6-4fd5-af05-236f8eb279db"
+        },
+        {
+          "id": "51b390fb-8c5d-48d1-bd78-0506bb3bec5a",
+          "name": "Template27",
+          "selfUri": "/api/v2/responsemanagement/responses/51b390fb-8c5d-48d1-bd78-0506bb3bec5a"
+        },
+        {
+          "id": "47dbb8f3-4729-4873-8d60-6649025d5714",
+          "name": "Template28",
+          "selfUri": "/api/v2/responsemanagement/responses/47dbb8f3-4729-4873-8d60-6649025d5714"
+        },
+        {
+          "id": "7458f520-373d-4ff1-94d1-5bcec74a0d2f",
+          "name": "Template29",
+          "selfUri": "/api/v2/responsemanagement/responses/7458f520-373d-4ff1-94d1-5bcec74a0d2f"
+        },
+        {
+          "id": "7464f6b8-d188-4e40-bb1a-84f2edd2d8f9",
+          "name": "Template30",
+          "selfUri": "/api/v2/responsemanagement/responses/7464f6b8-d188-4e40-bb1a-84f2edd2d8f9"
+        }
+      ],
+      "selfUri": "/api/v2/responsemanagement/responseassets/db1a25c5-3b4a-452d-8892-8c2eca1367de"
+    },
+    {
+      "id": "d010478a-c173-4d21-98fa-1f7fef71eda5",
+      "name": "Svensk_Inkasso_-_Ny_Branschkod_för_God_Inkassosed.pdf",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 563256,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/f5d5a8be-d1ce-4ce1-a2ff-504c32dc1a78.d010478a-c173-4d21-98fa-1f7fef71eda5.pdf",
+      "contentType": "application/pdf",
+      "dateCreated": "2026-09-03T12:30:59.252Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:30:59.252Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/d010478a-c173-4d21-98fa-1f7fef71eda5"
+    },
+    {
+      "id": "88e00f0a-4c21-4a82-9021-d70a8644b8fb",
+      "name": "Swish2.jpg.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 50835,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/d2e1df6c-04ff-43d4-8d7b-20d1a621a97f.88e00f0a-4c21-4a82-9021-d70a8644b8fb.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:31:11.985Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:31:11.985Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/88e00f0a-4c21-4a82-9021-d70a8644b8fb"
+    },
+    {
+      "id": "e7c3bd14-6042-4e3b-a1aa-f53ec340dd38",
+      "name": "Swish4n.jpg.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 57448,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/ebf7cd2d-efc6-4e2d-a0be-a6154539b34e.e7c3bd14-6042-4e3b-a1aa-f53ec340dd38.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:31:17.112Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:31:17.112Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/e7c3bd14-6042-4e3b-a1aa-f53ec340dd38"
+    },
+    {
+      "id": "e46555c4-51c5-42d3-b664-1151078a0d68",
+      "name": "Swish5.jpg.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 20467,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/0fea0ff9-4ced-4537-a1fe-58c1778590a3.e46555c4-51c5-42d3-b664-1151078a0d68.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:31:22.294Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:31:22.294Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/e46555c4-51c5-42d3-b664-1151078a0d68"
+    },
+    {
+      "id": "5399706e-1695-471c-bbe0-18c549893f7d",
+      "name": "Swish6.jpg.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 18648,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/707ac36e-907e-4fb9-a675-27b8fd28d13e.5399706e-1695-471c-bbe0-18c549893f7d.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:31:28.964Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:31:28.964Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/5399706e-1695-471c-bbe0-18c549893f7d"
+    },
+    {
+      "id": "3b682d26-371a-4a65-83a3-576471068089",
+      "name": "Swishny3.jpg.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 35646,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/0bc09067-dc5c-4cad-a69f-ae20dc543d93.3b682d26-371a-4a65-83a3-576471068089.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:31:41.681Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:31:41.681Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/3b682d26-371a-4a65-83a3-576471068089"
+    },
+    {
+      "id": "fa9f25d7-c480-461f-af68-9ddc8ba3231b",
+      "name": "Sökaivalitive.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 50998,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/d2ed041c-aa4a-4a54-849e-200f9754cdb5.fa9f25d7-c480-461f-af68-9ddc8ba3231b.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:30:47.337Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:30:47.337Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/fa9f25d7-c480-461f-af68-9ddc8ba3231b"
+    },
+    {
+      "id": "a31cc88e-c124-4482-9838-33dad30b8359",
+      "name": "Uppdaterad_formulär.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 72915,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/67b11566-c1ed-47d4-8194-8024e10d4d8f.a31cc88e-c124-4482-9838-33dad30b8359.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:31:47.765Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:31:47.765Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/a31cc88e-c124-4482-9838-33dad30b8359"
+    },
+    {
+      "id": "e09267fc-b126-48dd-aeb3-be5759e04503",
+      "name": "Utbetkort_innan_FinBridge_(retuscherad).png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 29911,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/f0a9058d-087b-41b4-81f5-e0c1743f787b.e09267fc-b126-48dd-aeb3-be5759e04503.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:31:53.576Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:31:53.576Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/e09267fc-b126-48dd-aeb3-be5759e04503"
+    },
+    {
+      "id": "348c9c3e-cc19-410d-b76c-32eecc8c3def",
+      "name": "Utbetkort_via_FinBridge_(retuscherad).png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 33151,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/b149d67c-fef8-4f0c-a004-5122557aea57.348c9c3e-cc19-410d-b76c-32eecc8c3def.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:31:59.574Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:31:59.574Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/348c9c3e-cc19-410d-b76c-32eecc8c3def"
+    },
+    {
+      "id": "8164b37b-d332-4444-a81f-5365cb296694",
+      "name": "Utg_brev_GN_stort_belopp.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 66452,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/af805e42-5e7d-4250-9a41-c753a059568d.8164b37b-d332-4444-a81f-5365cb296694.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:32:04.648Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:32:04.648Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/8164b37b-d332-4444-a81f-5365cb296694"
+    },
+    {
+      "id": "52c469b3-eb3e-4f8e-af3a-15b9d65b53cb",
+      "name": "Utg_brev_stort_belopp_historik.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 58213,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/102db251-fd2f-4aa5-a2dd-541bd58b9370.52c469b3-eb3e-4f8e-af3a-15b9d65b53cb.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:32:13.261Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:32:13.261Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/52c469b3-eb3e-4f8e-af3a-15b9d65b53cb"
+    },
+    {
+      "id": "108bd11e-dc63-4498-9c2a-4028df221215",
+      "name": "Utg_mejl_GN_stort_belopp.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 38133,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/73a780d4-5f4c-41d9-b09d-7b41754f3f35.108bd11e-dc63-4498-9c2a-4028df221215.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:32:25.287Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:32:25.287Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/108bd11e-dc63-4498-9c2a-4028df221215"
+    },
+    {
+      "id": "822d4a6e-8f15-4a2e-bed6-3f592ec9fa60",
+      "name": "Utg_mejl_stort_belopp_historik.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 16603,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/bb8354b3-877e-4720-a49b-ea01ff76d460.822d4a6e-8f15-4a2e-bed6-3f592ec9fa60.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:32:31.166Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:32:31.166Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/822d4a6e-8f15-4a2e-bed6-3f592ec9fa60"
+    },
+    {
+      "id": "9ef73ee0-4b41-4e4e-9356-df39d4382efa",
+      "name": "Utgirering_1._Historik.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 108631,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/030e0b72-6a3f-414f-852b-7bda52caf817.9ef73ee0-4b41-4e4e-9356-df39d4382efa.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:32:37.136Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:32:37.136Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/9ef73ee0-4b41-4e4e-9356-df39d4382efa"
+    },
+    {
+      "id": "7e7d8f63-6fb6-4226-a5d2-f17b5ccac711",
+      "name": "UtslagDom.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 30741,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/79f1e736-85f5-4dcf-81a7-e3cca880a4b8.7e7d8f63-6fb6-4226-a5d2-f17b5ccac711.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:32:43.884Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:32:43.884Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/7e7d8f63-6fb6-4226-a5d2-f17b5ccac711"
+    },
+    {
+      "id": "43427299-b1ab-423a-8d09-e0331c52004d",
+      "name": "UtslagDom.jpg.jpg",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 30741,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/95a32790-e8ef-402f-b1b8-af35c7ff40b9.43427299-b1ab-423a-8d09-e0331c52004d.jpg",
+      "contentType": "image/jpeg",
+      "dateCreated": "2026-09-03T12:32:49.022Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:32:49.022Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/43427299-b1ab-423a-8d09-e0331c52004d"
+    },
+    {
+      "id": "44058d16-e7c7-4809-9318-9b468de5598d",
+      "name": "vinterwiki2025-11-10_135952.png",
+      "division": {
+        "id": "bc03537c-3288-451d-b0c0-44ada9039556",
+        "selfUri": "/api/v2/authorization/divisions/bc03537c-3288-451d-b0c0-44ada9039556"
+      },
+      "contentLength": 3002419,
+      "contentLocation": "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/d3769b62-fdce-4075-8ead-b6b53b2eb9d0/714ee50b-04b5-4a25-ab58-5528fa7ec305.44058d16-e7c7-4809-9318-9b468de5598d.png",
+      "contentType": "image/png",
+      "dateCreated": "2026-09-03T12:32:55.834Z",
+      "createdBy": {
+        "id": "9df74f46-f410-42e6-a41d-b717cd124d38",
+        "selfUri": "/api/v2/users/9df74f46-f410-42e6-a41d-b717cd124d38"
+      },
+      "dateModified": "2026-09-03T12:32:55.834Z",
+      "selfUri": "/api/v2/responsemanagement/responseassets/44058d16-e7c7-4809-9318-9b468de5598d"
+    }
+  ]
+}
