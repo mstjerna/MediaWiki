@@ -1,0 +1,3050 @@
+{
+  "source": "genesys_full_migration_v9_final.json",
+  "total_occurrences": 189,
+  "distinct_files": 186,
+  "extensions": {
+    ".docx": 1,
+    ".jpg": 59,
+    ".pdf": 8,
+    ".png": 118
+  },
+  "files": [
+    {
+      "filename": "750px-Koer redigerad v2.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Genesys"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "750px-Koer redigerad v2.jpg",
+        "750px-koer redigerad v2.jpg",
+        "750px-Koer_redigerad_v2.jpg",
+        "750px-koer_redigerad_v2.jpg"
+      ]
+    },
+    {
+      "filename": "750px-Soka kollegor redigerad.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Genesys"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "750px-Soka kollegor redigerad.jpg",
+        "750px-soka kollegor redigerad.jpg",
+        "750px-Soka_kollegor_redigerad.jpg",
+        "750px-soka_kollegor_redigerad.jpg"
+      ]
+    },
+    {
+      "filename": "750px-Status v2.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Genesys"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "750px-Status v2.jpg",
+        "750px-status v2.jpg",
+        "750px-Status_v2.jpg",
+        "750px-status_v2.jpg"
+      ]
+    },
+    {
+      "filename": "750px-Ta samtal redigerad.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Genesys"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "750px-Ta samtal redigerad.jpg",
+        "750px-ta samtal redigerad.jpg",
+        "750px-Ta_samtal_redigerad.jpg",
+        "750px-ta_samtal_redigerad.jpg"
+      ]
+    },
+    {
+      "filename": "750px-Vid samtal redigerad.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Genesys"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "750px-Vid samtal redigerad.jpg",
+        "750px-vid samtal redigerad.jpg",
+        "750px-Vid_samtal_redigerad.jpg",
+        "750px-vid_samtal_redigerad.jpg"
+      ]
+    },
+    {
+      "filename": "7838fc4b-8741-46cd-b23e-10164cbd7696.png",
+      "occurrences": 1,
+      "articles": [
+        "Kontrollera verkställighetsfliken vid dubbla ansökningar om verkställighet"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "7838fc4b-8741-46cd-b23e-10164cbd7696.png"
+      ]
+    },
+    {
+      "filename": "akt.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Nova"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "akt.jpg",
+        "Akt.jpg"
+      ]
+    },
+    {
+      "filename": "amplan.jpg",
+      "occurrences": 2,
+      "articles": [
+        "Amorteringsplan",
+        "Nova"
+      ],
+      "forms": {
+        "paragraph": 2
+      },
+      "extension": ".jpg",
+      "variants": [
+        "amplan.jpg",
+        "Amplan.jpg"
+      ]
+    },
+    {
+      "filename": "Artemis 1718786114960.png",
+      "occurrences": 1,
+      "articles": [
+        "Artemis"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Artemis 1718786114960.png",
+        "artemis 1718786114960.png",
+        "Artemis_1718786114960.png",
+        "artemis_1718786114960.png"
+      ]
+    },
+    {
+      "filename": "AutoHotkey 1724674207181.png",
+      "occurrences": 1,
+      "articles": [
+        "AutoHotkey"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "AutoHotkey 1724674207181.png",
+        "autohotkey 1724674207181.png",
+        "AutoHotkey_1724674207181.png",
+        "autohotkey_1724674207181.png"
+      ]
+    },
+    {
+      "filename": "AutoHotkey 1724764637107.png",
+      "occurrences": 1,
+      "articles": [
+        "AutoHotkey"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "AutoHotkey 1724764637107.png",
+        "autohotkey 1724764637107.png",
+        "AutoHotkey_1724764637107.png",
+        "autohotkey_1724764637107.png"
+      ]
+    },
+    {
+      "filename": "AutoHotkey 1724764963674.png",
+      "occurrences": 1,
+      "articles": [
+        "AutoHotkey"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "AutoHotkey 1724764963674.png",
+        "autohotkey 1724764963674.png",
+        "AutoHotkey_1724764963674.png",
+        "autohotkey_1724764963674.png"
+      ]
+    },
+    {
+      "filename": "B2B innan konkurs lathund.pdf",
+      "occurrences": 1,
+      "articles": [
+        "B2B"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".pdf",
+      "variants": [
+        "B2B innan konkurs lathund.pdf",
+        "b2b innan konkurs lathund.pdf",
+        "B2B_innan_konkurs_lathund.pdf",
+        "b2b_innan_konkurs_lathund.pdf"
+      ]
+    },
+    {
+      "filename": "begratg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "begratg.jpg",
+        "Begratg.jpg"
+      ]
+    },
+    {
+      "filename": "Bes-ex..jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Bes-ex..jpg",
+        "bes-ex..jpg"
+      ]
+    },
+    {
+      "filename": "Bes-ex.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Bes-ex.jpg.jpg",
+        "bes-ex.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "BF-SOLIDAR.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Solidarmål"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "BF-SOLIDAR.jpg",
+        "bf-solidar.jpg"
+      ]
+    },
+    {
+      "filename": "Bild1nya.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Bild1nya.jpg",
+        "bild1nya.jpg"
+      ]
+    },
+    {
+      "filename": "Bild2.png",
+      "occurrences": 1,
+      "articles": [
+        "Tele2 (Comviq)"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Bild2.png",
+        "bild2.png"
+      ]
+    },
+    {
+      "filename": "Bild2nya.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Bild2nya.jpg",
+        "bild2nya.jpg"
+      ]
+    },
+    {
+      "filename": "Bild3.png",
+      "occurrences": 1,
+      "articles": [
+        "Tele2 (Comviq)"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Bild3.png",
+        "bild3.png"
+      ]
+    },
+    {
+      "filename": "Bouppteckning.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Dödsbon"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Bouppteckning.jpg",
+        "bouppteckning.jpg"
+      ]
+    },
+    {
+      "filename": "Brevuppsamling 1748946996441.png",
+      "occurrences": 1,
+      "articles": [
+        "Brevuppsamling"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Brevuppsamling 1748946996441.png",
+        "brevuppsamling 1748946996441.png",
+        "Brevuppsamling_1748946996441.png",
+        "brevuppsamling_1748946996441.png"
+      ]
+    },
+    {
+      "filename": "Brevuppsamling 1756881882983.png",
+      "occurrences": 1,
+      "articles": [
+        "Brevuppsamling"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Brevuppsamling 1756881882983.png",
+        "brevuppsamling 1756881882983.png",
+        "Brevuppsamling_1756881882983.png",
+        "brevuppsamling_1756881882983.png"
+      ]
+    },
+    {
+      "filename": "Brevuppsamling 1756882292230.png",
+      "occurrences": 1,
+      "articles": [
+        "Brevuppsamling"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Brevuppsamling 1756882292230.png",
+        "brevuppsamling 1756882292230.png",
+        "Brevuppsamling_1756882292230.png",
+        "brevuppsamling_1756882292230.png"
+      ]
+    },
+    {
+      "filename": "Brevuppsamling 1756882414983.png",
+      "occurrences": 1,
+      "articles": [
+        "Brevuppsamling"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Brevuppsamling 1756882414983.png",
+        "brevuppsamling 1756882414983.png",
+        "Brevuppsamling_1756882414983.png",
+        "brevuppsamling_1756882414983.png"
+      ]
+    },
+    {
+      "filename": "Brevuppsamling 1769677840734.png",
+      "occurrences": 1,
+      "articles": [
+        "Brevuppsamling"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Brevuppsamling 1769677840734.png",
+        "brevuppsamling 1769677840734.png",
+        "Brevuppsamling_1769677840734.png",
+        "brevuppsamling_1769677840734.png"
+      ]
+    },
+    {
+      "filename": "Brevuppsamling 1771499830561.png",
+      "occurrences": 1,
+      "articles": [
+        "Brevuppsamling"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Brevuppsamling 1771499830561.png",
+        "brevuppsamling 1771499830561.png",
+        "Brevuppsamling_1771499830561.png",
+        "brevuppsamling_1771499830561.png"
+      ]
+    },
+    {
+      "filename": "Brevuppsamling 1771500712569.png",
+      "occurrences": 1,
+      "articles": [
+        "Brevuppsamling"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Brevuppsamling 1771500712569.png",
+        "brevuppsamling 1771500712569.png",
+        "Brevuppsamling_1771500712569.png",
+        "brevuppsamling_1771500712569.png"
+      ]
+    },
+    {
+      "filename": "Brevuppsamling 1771500766385.png",
+      "occurrences": 1,
+      "articles": [
+        "Brevuppsamling"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Brevuppsamling 1771500766385.png",
+        "brevuppsamling 1771500766385.png",
+        "Brevuppsamling_1771500766385.png",
+        "brevuppsamling_1771500766385.png"
+      ]
+    },
+    {
+      "filename": "buswcare.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Historia"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "buswcare.jpg",
+        "Buswcare.jpg"
+      ]
+    },
+    {
+      "filename": "callout sunrise.png",
+      "occurrences": 1,
+      "articles": [
+        "Nyhetsarkiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "callout sunrise.png",
+        "Callout sunrise.png",
+        "callout_sunrise.png",
+        "Callout_sunrise.png"
+      ]
+    },
+    {
+      "filename": "Debt Collection process 3.png",
+      "occurrences": 1,
+      "articles": [
+        "Main Page"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Debt Collection process 3.png",
+        "debt collection process 3.png",
+        "Debt_Collection_process_3.png",
+        "debt_collection_process_3.png"
+      ]
+    },
+    {
+      "filename": "Debt Collection process 4.jpg.png",
+      "occurrences": 1,
+      "articles": [
+        "Tvist"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Debt Collection process 4.jpg.png",
+        "debt collection process 4.jpg.png",
+        "Debt_Collection_process_4.jpg.png",
+        "debt_collection_process_4.jpg.png"
+      ]
+    },
+    {
+      "filename": "Debt Collection process 4.png",
+      "occurrences": 1,
+      "articles": [
+        "Legal"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Debt Collection process 4.png",
+        "debt collection process 4.png",
+        "Debt_Collection_process_4.png",
+        "debt_collection_process_4.png"
+      ]
+    },
+    {
+      "filename": "Debt Collection process-4.png",
+      "occurrences": 1,
+      "articles": [
+        "Main Page"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Debt Collection process-4.png",
+        "debt collection process-4.png",
+        "Debt_Collection_process-4.png",
+        "debt_collection_process-4.png"
+      ]
+    },
+    {
+      "filename": "debt-collection sunrise.png",
+      "occurrences": 1,
+      "articles": [
+        "Betalningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "debt-collection sunrise.png",
+        "Debt-collection sunrise.png",
+        "debt-collection_sunrise.png",
+        "Debt-collection_sunrise.png"
+      ]
+    },
+    {
+      "filename": "Delgivningsmetoder.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Betalningsföreläggande"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Delgivningsmetoder.jpg",
+        "delgivningsmetoder.jpg"
+      ]
+    },
+    {
+      "filename": "Dodsboanmaning2jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Dödsbon"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Dodsboanmaning2jpg.jpg",
+        "dodsboanmaning2jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Dödsbo2.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Dödsbo2.jpg.jpg",
+        "dödsbo2.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "ex-atgard.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "ex-atgard.jpg.jpg",
+        "Ex-atgard.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "ex-atgardsflik2.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "ex-atgardsflik2.jpg.jpg",
+        "Ex-atgardsflik2.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "ex-bes.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "ex-bes.jpg.jpg",
+        "Ex-bes.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Exempel backning på aktnivå (retuscherad x2).png",
+      "occurrences": 1,
+      "articles": [
+        "Backningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel backning på aktnivå (retuscherad x2).png",
+        "exempel backning på aktnivå (retuscherad x2).png",
+        "Exempel_backning_på_aktnivå_(retuscherad_x2).png",
+        "exempel_backning_på_aktnivå_(retuscherad_x2).png"
+      ]
+    },
+    {
+      "filename": "Exempel brev Tillgodo-kontakt.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel brev Tillgodo-kontakt.png",
+        "exempel brev tillgodo-kontakt.png",
+        "Exempel_brev_Tillgodo-kontakt.png",
+        "exempel_brev_tillgodo-kontakt.png"
+      ]
+    },
+    {
+      "filename": "Exempel kontoutdrag över 10000.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel kontoutdrag över 10000.png",
+        "exempel kontoutdrag över 10000.png",
+        "Exempel_kontoutdrag_över_10000.png",
+        "exempel_kontoutdrag_över_10000.png"
+      ]
+    },
+    {
+      "filename": "Exempel notering via FinBridge.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel notering via FinBridge.png",
+        "exempel notering via finbridge.png",
+        "Exempel_notering_via_FinBridge.png",
+        "exempel_notering_via_finbridge.png"
+      ]
+    },
+    {
+      "filename": "Exempel notering återgirering innan FinBridge.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel notering återgirering innan FinBridge.png",
+        "exempel notering återgirering innan finbridge.png",
+        "Exempel_notering_återgirering_innan_FinBridge.png",
+        "exempel_notering_återgirering_innan_finbridge.png"
+      ]
+    },
+    {
+      "filename": "Exempel oplacerad (retuscherad).png",
+      "occurrences": 1,
+      "articles": [
+        "Oplacerade betalningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel oplacerad (retuscherad).png",
+        "exempel oplacerad (retuscherad).png",
+        "Exempel_oplacerad_(retuscherad).png",
+        "exempel_oplacerad_(retuscherad).png"
+      ]
+    },
+    {
+      "filename": "Exempel redovisat eller ej.png",
+      "occurrences": 1,
+      "articles": [
+        "Backningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel redovisat eller ej.png",
+        "exempel redovisat eller ej.png",
+        "Exempel_redovisat_eller_ej.png",
+        "exempel_redovisat_eller_ej.png"
+      ]
+    },
+    {
+      "filename": "Exempel Swish via Mina Sidor.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel Swish via Mina Sidor.png",
+        "exempel swish via mina sidor.png",
+        "Exempel_Swish_via_Mina_Sidor.png",
+        "exempel_swish_via_mina_sidor.png"
+      ]
+    },
+    {
+      "filename": "Exempel synk tillbaka till Nova.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel synk tillbaka till Nova.png",
+        "exempel synk tillbaka till nova.png",
+        "Exempel_synk_tillbaka_till_Nova.png",
+        "exempel_synk_tillbaka_till_nova.png"
+      ]
+    },
+    {
+      "filename": "Exempel tillgodo ej godkänt.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel tillgodo ej godkänt.png",
+        "exempel tillgodo ej godkänt.png",
+        "Exempel_tillgodo_ej_godkänt.png",
+        "exempel_tillgodo_ej_godkänt.png"
+      ]
+    },
+    {
+      "filename": "Exempel tillgodo godkända för girering.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel tillgodo godkända för girering.png",
+        "exempel tillgodo godkända för girering.png",
+        "Exempel_tillgodo_godkända_för_girering.png",
+        "exempel_tillgodo_godkända_för_girering.png"
+      ]
+    },
+    {
+      "filename": "Exempel tillgodo saknas under ej godkända.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel tillgodo saknas under ej godkända.png",
+        "exempel tillgodo saknas under ej godkända.png",
+        "Exempel_tillgodo_saknas_under_ej_godkända.png",
+        "exempel_tillgodo_saknas_under_ej_godkända.png"
+      ]
+    },
+    {
+      "filename": "Exempel tillgodohavandeflik.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel tillgodohavandeflik.png",
+        "exempel tillgodohavandeflik.png",
+        "Exempel_tillgodohavandeflik.png",
+        "exempel_tillgodohavandeflik.png"
+      ]
+    },
+    {
+      "filename": "Exempel utbetkort (retuscherad).png",
+      "occurrences": 1,
+      "articles": [
+        "Utbetalningskort"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel utbetkort (retuscherad).png",
+        "exempel utbetkort (retuscherad).png",
+        "Exempel_utbetkort_(retuscherad).png",
+        "exempel_utbetkort_(retuscherad).png"
+      ]
+    },
+    {
+      "filename": "Exempel utgirering FinBridge.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel utgirering FinBridge.png",
+        "exempel utgirering finbridge.png",
+        "Exempel_utgirering_FinBridge.png",
+        "exempel_utgirering_finbridge.png"
+      ]
+    },
+    {
+      "filename": "Exempel återgirering innan FinBridge.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Exempel återgirering innan FinBridge.png",
+        "exempel återgirering innan finbridge.png",
+        "Exempel_återgirering_innan_FinBridge.png",
+        "exempel_återgirering_innan_finbridge.png"
+      ]
+    },
+    {
+      "filename": "exempel-ackord.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Ackord"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "exempel-ackord.jpg",
+        "Exempel-ackord.jpg"
+      ]
+    },
+    {
+      "filename": "Extradata bankgiro.png",
+      "occurrences": 1,
+      "articles": [
+        "Registrera kontouppgifter"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Extradata bankgiro.png",
+        "extradata bankgiro.png",
+        "Extradata_bankgiro.png",
+        "extradata_bankgiro.png"
+      ]
+    },
+    {
+      "filename": "Extradata bankkonto.png",
+      "occurrences": 1,
+      "articles": [
+        "Registrera kontouppgifter"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Extradata bankkonto.png",
+        "extradata bankkonto.png",
+        "Extradata_bankkonto.png",
+        "extradata_bankkonto.png"
+      ]
+    },
+    {
+      "filename": "Extradata IBAN.png",
+      "occurrences": 1,
+      "articles": [
+        "Registrera kontouppgifter"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Extradata IBAN.png",
+        "extradata iban.png",
+        "Extradata_IBAN.png",
+        "extradata_iban.png"
+      ]
+    },
+    {
+      "filename": "Extradata Nordea personkonto.png",
+      "occurrences": 1,
+      "articles": [
+        "Registrera kontouppgifter"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Extradata Nordea personkonto.png",
+        "extradata nordea personkonto.png",
+        "Extradata_Nordea_personkonto.png",
+        "extradata_nordea_personkonto.png"
+      ]
+    },
+    {
+      "filename": "Extradata ofyllt (ret).png",
+      "occurrences": 1,
+      "articles": [
+        "Registrera kontouppgifter"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Extradata ofyllt (ret).png",
+        "extradata ofyllt (ret).png",
+        "Extradata_ofyllt_(ret).png",
+        "extradata_ofyllt_(ret).png"
+      ]
+    },
+    {
+      "filename": "Extradata plusgiro.png",
+      "occurrences": 1,
+      "articles": [
+        "Registrera kontouppgifter"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Extradata plusgiro.png",
+        "extradata plusgiro.png",
+        "Extradata_plusgiro.png",
+        "extradata_plusgiro.png"
+      ]
+    },
+    {
+      "filename": "Extrafält KivraAccountForm.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Extrafält KivraAccountForm.png",
+        "extrafält kivraaccountform.png",
+        "Extrafält_KivraAccountForm.png",
+        "extrafält_kivraaccountform.png"
+      ]
+    },
+    {
+      "filename": "Extrafält KivraBankAccount.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Extrafält KivraBankAccount.png",
+        "extrafält kivrabankaccount.png",
+        "Extrafält_KivraBankAccount.png",
+        "extrafält_kivrabankaccount.png"
+      ]
+    },
+    {
+      "filename": "Extrafält kontonummer.png",
+      "occurrences": 1,
+      "articles": [
+        "Registrera kontouppgifter"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Extrafält kontonummer.png",
+        "extrafält kontonummer.png",
+        "Extrafält_kontonummer.png",
+        "extrafält_kontonummer.png"
+      ]
+    },
+    {
+      "filename": "F11.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Nova"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "F11.jpg",
+        "f11.jpg"
+      ]
+    },
+    {
+      "filename": "filtrera.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "filtrera.jpg.jpg",
+        "Filtrera.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "FinBridge avi exempel.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "FinBridge avi exempel.png",
+        "finbridge avi exempel.png",
+        "FinBridge_avi_exempel.png",
+        "finbridge_avi_exempel.png"
+      ]
+    },
+    {
+      "filename": "FinBridge kontonummer exempel.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "FinBridge kontonummer exempel.png",
+        "finbridge kontonummer exempel.png",
+        "FinBridge_kontonummer_exempel.png",
+        "finbridge_kontonummer_exempel.png"
+      ]
+    },
+    {
+      "filename": "flexiskin-images-logo.png",
+      "occurrences": 1,
+      "articles": [
+        "Main Page"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "flexiskin-images-logo.png",
+        "Flexiskin-images-logo.png"
+      ]
+    },
+    {
+      "filename": "Fullmakt.docx",
+      "occurrences": 1,
+      "articles": [
+        "Instruktion gällande rättegångsfullmakter"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".docx",
+      "variants": [
+        "Fullmakt.docx",
+        "fullmakt.docx"
+      ]
+    },
+    {
+      "filename": "Fullmaktsblankett AlektumGroup (1).pdf",
+      "occurrences": 1,
+      "articles": [
+        "Fullmakt för gäldenärsombud"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".pdf",
+      "variants": [
+        "Fullmaktsblankett AlektumGroup (1).pdf",
+        "fullmaktsblankett alektumgroup (1).pdf",
+        "Fullmaktsblankett_AlektumGroup_(1).pdf",
+        "fullmaktsblankett_alektumgroup_(1).pdf"
+      ]
+    },
+    {
+      "filename": "GN-bild1-5.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "GN-bild1-5.jpg.jpg",
+        "gn-bild1-5.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "GN-resa-wiki.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Gäldenärens perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "GN-resa-wiki.jpg",
+        "gn-resa-wiki.jpg"
+      ]
+    },
+    {
+      "filename": "GNNIVÅ.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Nova"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "GNNIVÅ.jpg",
+        "gnnivå.jpg"
+      ]
+    },
+    {
+      "filename": "Hindersbevis.jpg.png",
+      "occurrences": 1,
+      "articles": [
+        "Partsdelgivning / delgivningkvitto"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Hindersbevis.jpg.png",
+        "hindersbevis.jpg.png"
+      ]
+    },
+    {
+      "filename": "Historik KivraBankAccount.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Historik KivraBankAccount.png",
+        "historik kivrabankaccount.png",
+        "Historik_KivraBankAccount.png",
+        "historik_kivrabankaccount.png"
+      ]
+    },
+    {
+      "filename": "Historik.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Historik.jpg.jpg",
+        "historik.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Historiknotering Tillgodo-kontakt.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Historiknotering Tillgodo-kontakt.png",
+        "historiknotering tillgodo-kontakt.png",
+        "Historiknotering_Tillgodo-kontakt.png",
+        "historiknotering_tillgodo-kontakt.png"
+      ]
+    },
+    {
+      "filename": "HL - Abroad.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Utland/Crossborder"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "HL - Abroad.jpg",
+        "hl - abroad.jpg",
+        "HL_-_Abroad.jpg",
+        "hl_-_abroad.jpg"
+      ]
+    },
+    {
+      "filename": "HRlog.jpg",
+      "occurrences": 1,
+      "articles": [
+        "HR - Personal"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "HRlog.jpg",
+        "hrlog.jpg"
+      ]
+    },
+    {
+      "filename": "Händelseförlopp-önskat.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Betalningsföreläggande"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Händelseförlopp-önskat.jpg",
+        "händelseförlopp-önskat.jpg"
+      ]
+    },
+    {
+      "filename": "Informationeftersökning (1).jpg",
+      "occurrences": 1,
+      "articles": [
+        "Valitive"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Informationeftersökning (1).jpg",
+        "informationeftersökning (1).jpg",
+        "Informationeftersökning_(1).jpg",
+        "informationeftersökning_(1).jpg"
+      ]
+    },
+    {
+      "filename": "Inloggning2.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Valitive"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Inloggning2.jpg",
+        "inloggning2.jpg"
+      ]
+    },
+    {
+      "filename": "Inloggsmskod.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Valitive"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Inloggsmskod.jpg",
+        "inloggsmskod.jpg"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756823695614.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756823695614.png",
+        "kfm-filer 1756823695614.png",
+        "KFM-filer_1756823695614.png",
+        "kfm-filer_1756823695614.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756824072048.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756824072048.png",
+        "kfm-filer 1756824072048.png",
+        "KFM-filer_1756824072048.png",
+        "kfm-filer_1756824072048.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756824121269.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756824121269.png",
+        "kfm-filer 1756824121269.png",
+        "KFM-filer_1756824121269.png",
+        "kfm-filer_1756824121269.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756824160538.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756824160538.png",
+        "kfm-filer 1756824160538.png",
+        "KFM-filer_1756824160538.png",
+        "kfm-filer_1756824160538.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756824284551.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756824284551.png",
+        "kfm-filer 1756824284551.png",
+        "KFM-filer_1756824284551.png",
+        "kfm-filer_1756824284551.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756824308222.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756824308222.png",
+        "kfm-filer 1756824308222.png",
+        "KFM-filer_1756824308222.png",
+        "kfm-filer_1756824308222.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756824462736.png",
+      "occurrences": 2,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 2
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756824462736.png",
+        "kfm-filer 1756824462736.png",
+        "KFM-filer_1756824462736.png",
+        "kfm-filer_1756824462736.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756824910786.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756824910786.png",
+        "kfm-filer 1756824910786.png",
+        "KFM-filer_1756824910786.png",
+        "kfm-filer_1756824910786.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756825159720.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756825159720.png",
+        "kfm-filer 1756825159720.png",
+        "KFM-filer_1756825159720.png",
+        "kfm-filer_1756825159720.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756825867511.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756825867511.png",
+        "kfm-filer 1756825867511.png",
+        "KFM-filer_1756825867511.png",
+        "kfm-filer_1756825867511.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756825907023.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756825907023.png",
+        "kfm-filer 1756825907023.png",
+        "KFM-filer_1756825907023.png",
+        "kfm-filer_1756825907023.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756825923153.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756825923153.png",
+        "kfm-filer 1756825923153.png",
+        "KFM-filer_1756825923153.png",
+        "kfm-filer_1756825923153.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756825959942.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756825959942.png",
+        "kfm-filer 1756825959942.png",
+        "KFM-filer_1756825959942.png",
+        "kfm-filer_1756825959942.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756825997772.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756825997772.png",
+        "kfm-filer 1756825997772.png",
+        "KFM-filer_1756825997772.png",
+        "kfm-filer_1756825997772.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756826013184.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756826013184.png",
+        "kfm-filer 1756826013184.png",
+        "KFM-filer_1756826013184.png",
+        "kfm-filer_1756826013184.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756826042304.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756826042304.png",
+        "kfm-filer 1756826042304.png",
+        "KFM-filer_1756826042304.png",
+        "kfm-filer_1756826042304.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756826248465.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756826248465.png",
+        "kfm-filer 1756826248465.png",
+        "KFM-filer_1756826248465.png",
+        "kfm-filer_1756826248465.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756826341439.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756826341439.png",
+        "kfm-filer 1756826341439.png",
+        "KFM-filer_1756826341439.png",
+        "kfm-filer_1756826341439.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756826357112.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756826357112.png",
+        "kfm-filer 1756826357112.png",
+        "KFM-filer_1756826357112.png",
+        "kfm-filer_1756826357112.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756826554624.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756826554624.png",
+        "kfm-filer 1756826554624.png",
+        "KFM-filer_1756826554624.png",
+        "kfm-filer_1756826554624.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756826631293.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756826631293.png",
+        "kfm-filer 1756826631293.png",
+        "KFM-filer_1756826631293.png",
+        "kfm-filer_1756826631293.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756826675129.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756826675129.png",
+        "kfm-filer 1756826675129.png",
+        "KFM-filer_1756826675129.png",
+        "kfm-filer_1756826675129.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1756827213966.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1756827213966.png",
+        "kfm-filer 1756827213966.png",
+        "KFM-filer_1756827213966.png",
+        "kfm-filer_1756827213966.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509166263.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509166263.png",
+        "kfm-filer 1762509166263.png",
+        "KFM-filer_1762509166263.png",
+        "kfm-filer_1762509166263.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509304289.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509304289.png",
+        "kfm-filer 1762509304289.png",
+        "KFM-filer_1762509304289.png",
+        "kfm-filer_1762509304289.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509410633.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509410633.png",
+        "kfm-filer 1762509410633.png",
+        "KFM-filer_1762509410633.png",
+        "kfm-filer_1762509410633.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509445249.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509445249.png",
+        "kfm-filer 1762509445249.png",
+        "KFM-filer_1762509445249.png",
+        "kfm-filer_1762509445249.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509496788.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509496788.png",
+        "kfm-filer 1762509496788.png",
+        "KFM-filer_1762509496788.png",
+        "kfm-filer_1762509496788.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509737068.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509737068.png",
+        "kfm-filer 1762509737068.png",
+        "KFM-filer_1762509737068.png",
+        "kfm-filer_1762509737068.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509766146.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509766146.png",
+        "kfm-filer 1762509766146.png",
+        "KFM-filer_1762509766146.png",
+        "kfm-filer_1762509766146.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509862847.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509862847.png",
+        "kfm-filer 1762509862847.png",
+        "KFM-filer_1762509862847.png",
+        "kfm-filer_1762509862847.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509889502.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509889502.png",
+        "kfm-filer 1762509889502.png",
+        "KFM-filer_1762509889502.png",
+        "kfm-filer_1762509889502.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509919193.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509919193.png",
+        "kfm-filer 1762509919193.png",
+        "KFM-filer_1762509919193.png",
+        "kfm-filer_1762509919193.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762509955146.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762509955146.png",
+        "kfm-filer 1762509955146.png",
+        "KFM-filer_1762509955146.png",
+        "kfm-filer_1762509955146.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762510214709.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762510214709.png",
+        "kfm-filer 1762510214709.png",
+        "KFM-filer_1762510214709.png",
+        "kfm-filer_1762510214709.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762510373905.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762510373905.png",
+        "kfm-filer 1762510373905.png",
+        "KFM-filer_1762510373905.png",
+        "kfm-filer_1762510373905.png"
+      ]
+    },
+    {
+      "filename": "KFM-filer 1762510415881.png",
+      "occurrences": 1,
+      "articles": [
+        "KFM-filer"
+      ],
+      "forms": {
+        "compact": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KFM-filer 1762510415881.png",
+        "kfm-filer 1762510415881.png",
+        "KFM-filer_1762510415881.png",
+        "kfm-filer_1762510415881.png"
+      ]
+    },
+    {
+      "filename": "Kivra JA status Extrafält.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Kivra JA status Extrafält.png",
+        "kivra ja status extrafält.png",
+        "Kivra_JA_status_Extrafält.png",
+        "kivra_ja_status_extrafält.png"
+      ]
+    },
+    {
+      "filename": "Kivra NEJ status Extrafält.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Kivra NEJ status Extrafält.png",
+        "kivra nej status extrafält.png",
+        "Kivra_NEJ_status_Extrafält.png",
+        "kivra_nej_status_extrafält.png"
+      ]
+    },
+    {
+      "filename": "KivraForm besvarad.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KivraForm besvarad.png",
+        "kivraform besvarad.png",
+        "KivraForm_besvarad.png",
+        "kivraform_besvarad.png"
+      ]
+    },
+    {
+      "filename": "KivraForm i Kivra.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KivraForm i Kivra.png",
+        "kivraform i kivra.png",
+        "KivraForm_i_Kivra.png",
+        "kivraform_i_kivra.png"
+      ]
+    },
+    {
+      "filename": "KivraForm svarssida.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KivraForm svarssida.png",
+        "kivraform svarssida.png",
+        "KivraForm_svarssida.png",
+        "kivraform_svarssida.png"
+      ]
+    },
+    {
+      "filename": "KivraForm Tink.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "KivraForm Tink.png",
+        "kivraform tink.png",
+        "KivraForm_Tink.png",
+        "kivraform_tink.png"
+      ]
+    },
+    {
+      "filename": "Konkurs2.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Konkurs2.jpg.jpg",
+        "konkurs2.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Kontrollera verkställighetsfliken vid dubbla ansökningar om verkställighet 1785220570524.png",
+      "occurrences": 1,
+      "articles": [
+        "Kontrollera verkställighetsfliken vid dubbla ansökningar om verkställighet"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Kontrollera verkställighetsfliken vid dubbla ansökningar om verkställighet 1785220570524.png",
+        "kontrollera verkställighetsfliken vid dubbla ansökningar om verkställighet 1785220570524.png",
+        "Kontrollera_verkställighetsfliken_vid_dubbla_ansökningar_om_verkställighet_1785220570524.png",
+        "kontrollera_verkställighetsfliken_vid_dubbla_ansökningar_om_verkställighet_1785220570524.png"
+      ]
+    },
+    {
+      "filename": "Kopiamejlstruktur.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Mallar för skriftlig kommunikation"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Kopiamejlstruktur.jpg",
+        "kopiamejlstruktur.jpg"
+      ]
+    },
+    {
+      "filename": "Lathund konkurs.pdf",
+      "occurrences": 1,
+      "articles": [
+        "Konkurs"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".pdf",
+      "variants": [
+        "Lathund konkurs.pdf",
+        "lathund konkurs.pdf",
+        "Lathund_konkurs.pdf",
+        "lathund_konkurs.pdf"
+      ]
+    },
+    {
+      "filename": "Leveransadress.png",
+      "occurrences": 1,
+      "articles": [
+        "Valitivelistan"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Leveransadress.png",
+        "leveransadress.png"
+      ]
+    },
+    {
+      "filename": "Lista oplacerade (retuscherad).jpg",
+      "occurrences": 1,
+      "articles": [
+        "Oplacerade betalningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Lista oplacerade (retuscherad).jpg",
+        "lista oplacerade (retuscherad).jpg",
+        "Lista_oplacerade_(retuscherad).jpg",
+        "lista_oplacerade_(retuscherad).jpg"
+      ]
+    },
+    {
+      "filename": "Lsm-brev (1).jpg",
+      "occurrences": 1,
+      "articles": [
+        "Dödsbon"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Lsm-brev (1).jpg",
+        "lsm-brev (1).jpg",
+        "Lsm-brev_(1).jpg",
+        "lsm-brev_(1).jpg"
+      ]
+    },
+    {
+      "filename": "Myntro Collect AB primary RGB.png",
+      "occurrences": 1,
+      "articles": [
+        "Myntro Collect AB"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Myntro Collect AB primary RGB.png",
+        "myntro collect ab primary rgb.png",
+        "Myntro_Collect_AB_primary_RGB.png",
+        "myntro_collect_ab_primary_rgb.png"
+      ]
+    },
+    {
+      "filename": "naststegbegratg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "naststegbegratg.jpg",
+        "Naststegbegratg.jpg"
+      ]
+    },
+    {
+      "filename": "Neds.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Betalningsföreläggande"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Neds.jpg.jpg",
+        "neds.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Nedsatt1.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Betalningsföreläggande"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Nedsatt1.jpg.jpg",
+        "nedsatt1.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "notering.jpg",
+      "occurrences": 2,
+      "articles": [
+        "Nova",
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 2
+      },
+      "extension": ".jpg",
+      "variants": [
+        "notering.jpg",
+        "Notering.jpg"
+      ]
+    },
+    {
+      "filename": "Ny Presentation Client Accounting Utbildning Del 1.pdf",
+      "occurrences": 1,
+      "articles": [
+        "Betalningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".pdf",
+      "variants": [
+        "Ny Presentation Client Accounting Utbildning Del 1.pdf",
+        "ny presentation client accounting utbildning del 1.pdf",
+        "Ny_Presentation_Client_Accounting_Utbildning_Del_1.pdf",
+        "ny_presentation_client_accounting_utbildning_del_1.pdf"
+      ]
+    },
+    {
+      "filename": "ombud1.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "ombud1.jpg.jpg",
+        "Ombud1.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "OPEX.CE.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Quality and Efficiency"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "OPEX.CE.jpg",
+        "opex.ce.jpg"
+      ]
+    },
+    {
+      "filename": "Partslyckad1klar.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Partsdelgivning / delgivningkvitto"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Partslyckad1klar.jpg.jpg",
+        "partslyckad1klar.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Paymate-Manual-2024.pdf",
+      "occurrences": 1,
+      "articles": [
+        "Paymate"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".pdf",
+      "variants": [
+        "Paymate-Manual-2024.pdf",
+        "paymate-manual-2024.pdf"
+      ]
+    },
+    {
+      "filename": "Picture2bonprix.png",
+      "occurrences": 1,
+      "articles": [
+        "Bonprix - Purchase"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Picture2bonprix.png",
+        "picture2bonprix.png"
+      ]
+    },
+    {
+      "filename": "Picture3bonpri.png",
+      "occurrences": 1,
+      "articles": [
+        "Bonprix - Purchase"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Picture3bonpri.png",
+        "picture3bonpri.png"
+      ]
+    },
+    {
+      "filename": "Picturebomprox1.png",
+      "occurrences": 1,
+      "articles": [
+        "Bonprix - Purchase"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Picturebomprox1.png",
+        "picturebomprox1.png"
+      ]
+    },
+    {
+      "filename": "process-parts.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Aktiv Delgivning AB"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "process-parts.jpg.jpg",
+        "Process-parts.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Rutin-hogkostnadskrediter.pdf",
+      "occurrences": 1,
+      "articles": [
+        "Högkostnadskrediter"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".pdf",
+      "variants": [
+        "Rutin-hogkostnadskrediter.pdf",
+        "rutin-hogkostnadskrediter.pdf"
+      ]
+    },
+    {
+      "filename": "Rutinbeskrivning - rekonstruktion och likvidation.pdf",
+      "occurrences": 1,
+      "articles": [
+        "B2B"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".pdf",
+      "variants": [
+        "Rutinbeskrivning - rekonstruktion och likvidation.pdf",
+        "rutinbeskrivning - rekonstruktion och likvidation.pdf",
+        "Rutinbeskrivning_-_rekonstruktion_och_likvidation.pdf",
+        "rutinbeskrivning_-_rekonstruktion_och_likvidation.pdf"
+      ]
+    },
+    {
+      "filename": "RÄNTA1.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Ränta"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "RÄNTA1.jpg",
+        "ränta1.jpg"
+      ]
+    },
+    {
+      "filename": "RÄNTA2.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Ränta"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "RÄNTA2.jpg",
+        "ränta2.jpg"
+      ]
+    },
+    {
+      "filename": "rätt-M-C.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Communications & Marketing"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "rätt-M-C.jpg",
+        "Rätt-M-C.jpg",
+        "rätt-m-c.jpg"
+      ]
+    },
+    {
+      "filename": "Samlingsakt1.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Nova"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Samlingsakt1.jpg",
+        "samlingsakt1.jpg"
+      ]
+    },
+    {
+      "filename": "Samlingsakt1.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Samlingsakt1.jpg.jpg",
+        "samlingsakt1.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Samlingsakt2.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Nova"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Samlingsakt2.jpg",
+        "samlingsakt2.jpg"
+      ]
+    },
+    {
+      "filename": "Samlingsakt2.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Samlingsakt2.jpg.jpg",
+        "samlingsakt2.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Screenshot 2025-11-10 141433.png",
+      "occurrences": 1,
+      "articles": [
+        "Main Page"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Screenshot 2025-11-10 141433.png",
+        "screenshot 2025-11-10 141433.png",
+        "Screenshot_2025-11-10_141433.png",
+        "screenshot_2025-11-10_141433.png"
+      ]
+    },
+    {
+      "filename": "Screenshot 2025-11-10 141459.png",
+      "occurrences": 1,
+      "articles": [
+        "Main Page"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Screenshot 2025-11-10 141459.png",
+        "screenshot 2025-11-10 141459.png",
+        "Screenshot_2025-11-10_141459.png",
+        "screenshot_2025-11-10_141459.png"
+      ]
+    },
+    {
+      "filename": "Screenshot 2025-12-16 113233.png",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Screenshot 2025-12-16 113233.png",
+        "screenshot 2025-12-16 113233.png",
+        "Screenshot_2025-12-16_113233.png",
+        "screenshot_2025-12-16_113233.png"
+      ]
+    },
+    {
+      "filename": "SI.S.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Quality and Efficiency"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "SI.S.jpg",
+        "si.s.jpg"
+      ]
+    },
+    {
+      "filename": "Skuldsanering3.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Skuldsanering3.jpg.jpg",
+        "skuldsanering3.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "Status -Abroad.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Utland/Crossborder"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Status -Abroad.jpg",
+        "status -abroad.jpg",
+        "Status_-Abroad.jpg",
+        "status_-abroad.jpg"
+      ]
+    },
+    {
+      "filename": "Svensk Inkasso - Ny Branschkod för God Inkassosed.pdf",
+      "occurrences": 1,
+      "articles": [
+        "Inkasso"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".pdf",
+      "variants": [
+        "Svensk Inkasso - Ny Branschkod för God Inkassosed.pdf",
+        "svensk inkasso - ny branschkod för god inkassosed.pdf",
+        "Svensk_Inkasso_-_Ny_Branschkod_för_God_Inkassosed.pdf",
+        "svensk_inkasso_-_ny_branschkod_för_god_inkassosed.pdf"
+      ]
+    },
+    {
+      "filename": "Swish2.jpg.png",
+      "occurrences": 1,
+      "articles": [
+        "Betalningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Swish2.jpg.png",
+        "swish2.jpg.png"
+      ]
+    },
+    {
+      "filename": "Swish4n.jpg.png",
+      "occurrences": 1,
+      "articles": [
+        "Betalningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Swish4n.jpg.png",
+        "swish4n.jpg.png"
+      ]
+    },
+    {
+      "filename": "Swish5.jpg.png",
+      "occurrences": 1,
+      "articles": [
+        "Betalningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Swish5.jpg.png",
+        "swish5.jpg.png"
+      ]
+    },
+    {
+      "filename": "Swish6.jpg.png",
+      "occurrences": 1,
+      "articles": [
+        "Betalningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Swish6.jpg.png",
+        "swish6.jpg.png"
+      ]
+    },
+    {
+      "filename": "Swishny3.jpg.png",
+      "occurrences": 1,
+      "articles": [
+        "Betalningar"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Swishny3.jpg.png",
+        "swishny3.jpg.png"
+      ]
+    },
+    {
+      "filename": "Sökaivalitive.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Valitive"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "Sökaivalitive.jpg",
+        "sökaivalitive.jpg"
+      ]
+    },
+    {
+      "filename": "Uppdaterad formulär.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Uppdaterad formulär.png",
+        "uppdaterad formulär.png",
+        "Uppdaterad_formulär.png",
+        "uppdaterad_formulär.png"
+      ]
+    },
+    {
+      "filename": "Utbetkort innan FinBridge (retuscherad).png",
+      "occurrences": 1,
+      "articles": [
+        "Utbetalningskort"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Utbetkort innan FinBridge (retuscherad).png",
+        "utbetkort innan finbridge (retuscherad).png",
+        "Utbetkort_innan_FinBridge_(retuscherad).png",
+        "utbetkort_innan_finbridge_(retuscherad).png"
+      ]
+    },
+    {
+      "filename": "Utbetkort via FinBridge (retuscherad).png",
+      "occurrences": 1,
+      "articles": [
+        "Utbetalningskort"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Utbetkort via FinBridge (retuscherad).png",
+        "utbetkort via finbridge (retuscherad).png",
+        "Utbetkort_via_FinBridge_(retuscherad).png",
+        "utbetkort_via_finbridge_(retuscherad).png"
+      ]
+    },
+    {
+      "filename": "Utg brev GN stort belopp.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Utg brev GN stort belopp.png",
+        "utg brev gn stort belopp.png",
+        "Utg_brev_GN_stort_belopp.png",
+        "utg_brev_gn_stort_belopp.png"
+      ]
+    },
+    {
+      "filename": "Utg brev stort belopp historik.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Utg brev stort belopp historik.png",
+        "utg brev stort belopp historik.png",
+        "Utg_brev_stort_belopp_historik.png",
+        "utg_brev_stort_belopp_historik.png"
+      ]
+    },
+    {
+      "filename": "Utg mejl GN stort belopp.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Utg mejl GN stort belopp.png",
+        "utg mejl gn stort belopp.png",
+        "Utg_mejl_GN_stort_belopp.png",
+        "utg_mejl_gn_stort_belopp.png"
+      ]
+    },
+    {
+      "filename": "Utg mejl stort belopp historik.png",
+      "occurrences": 1,
+      "articles": [
+        "Tillgodohavanden"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Utg mejl stort belopp historik.png",
+        "utg mejl stort belopp historik.png",
+        "Utg_mejl_stort_belopp_historik.png",
+        "utg_mejl_stort_belopp_historik.png"
+      ]
+    },
+    {
+      "filename": "Utgirering 1. Historik.png",
+      "occurrences": 1,
+      "articles": [
+        "Utgirering"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "Utgirering 1. Historik.png",
+        "utgirering 1. historik.png",
+        "Utgirering_1._Historik.png",
+        "utgirering_1._historik.png"
+      ]
+    },
+    {
+      "filename": "UtslagDom.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Nova"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "UtslagDom.jpg",
+        "utslagdom.jpg"
+      ]
+    },
+    {
+      "filename": "UtslagDom.jpg.jpg",
+      "occurrences": 1,
+      "articles": [
+        "Våra processer - Ur Novas perspektiv"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".jpg",
+      "variants": [
+        "UtslagDom.jpg.jpg",
+        "utslagdom.jpg.jpg"
+      ]
+    },
+    {
+      "filename": "vinterwiki2025-11-10 135952.png",
+      "occurrences": 1,
+      "articles": [
+        "Main Page"
+      ],
+      "forms": {
+        "paragraph": 1
+      },
+      "extension": ".png",
+      "variants": [
+        "vinterwiki2025-11-10 135952.png",
+        "Vinterwiki2025-11-10 135952.png",
+        "vinterwiki2025-11-10_135952.png",
+        "Vinterwiki2025-11-10_135952.png"
+      ]
+    }
+  ],
+  "xml_cross_check": {
+    "source": "Alektum+Group-20260902114843.xml",
+    "missing_from_json": [],
+    "missing_from_xml": []
+  }
+}
