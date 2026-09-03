@@ -1,0 +1,30 @@
+{
+  "assets": 187,
+  "collisions": [
+    {
+      "dropped": {
+        "assetId": "c846cb6c-ff58-4946-9bd2-188289ee79b9",
+        "dateCreated": "2026-09-03T12:01:24.567Z",
+        "name": "Exempel_redovisat_eller_ej.png"
+      },
+      "kept": {
+        "assetId": "9cd75e21-deaf-45eb-9a28-4fcceceadacb",
+        "dateCreated": "2026-09-03T12:02:24.128Z",
+        "name": "Exempel_redovisat_eller_ej.png"
+      },
+      "key": "exempel redovisat eller ej.png"
+    }
+  ],
+  "contentManagementFallbacks": [],
+  "extraAssetsNotReferenced": [
+    "substitution.png"
+  ],
+  "images": 177,
+  "mappedFromContentManagement": 0,
+  "mappedFromResponseAssets": 185,
+  "nonImages": 9,
+  "requiredFiles": 186,
+  "unmapped": [
+    "KivraForm i Kivra.png"
+  ]
+}

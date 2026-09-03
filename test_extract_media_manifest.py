@@ -165,7 +165,7 @@ class ManifestTests(unittest.TestCase):
 class GeneratedManifestTests(unittest.TestCase):
     def test_committed_manifest_matches_output(self):
         base = os.path.dirname(__file__) or "."
-        migration = os.path.join(base, convert.DEFAULT_OUTPUT)
+        migration = os.path.join(base, manifest.DEFAULT_JSON)
         committed = os.path.join(base, manifest.DEFAULT_TXT_OUTPUT)
         if not (os.path.exists(migration) and os.path.exists(committed)):
             self.skipTest("generated files not present")
