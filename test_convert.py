@@ -182,6 +182,108 @@ class ImagePlaceholderTests(unittest.TestCase):
                 self.assert_placeholder(blocks, "Pic.jpg")
 
 
+class MediaMapTests(unittest.TestCase):
+    """Image/hyperlink emission for files mapped to an uploaded asset."""
+
+    IMAGE_URL = "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/o/a.b.png"
+    PDF_URL = "https://api-cdn.mypurecloud.de/response-assets/v2/uploads/o/c.d.pdf"
+
+    def media(self):
+        # Keys use the underscore spelling of the uploaded asset, references
+        # in the wikitext use spaces: canonical_key() bridges the two.
+        return convert.media_map_from_dict({
+            "Foo_bild.png": {"url": self.IMAGE_URL, "contentType": "image/png",
+                             "isImage": True},
+            "Lathund_konkurs.pdf": {"url": self.PDF_URL,
+                                    "contentType": "application/pdf",
+                                    "isImage": False},
+        })
+
+    def test_mapped_image_becomes_image_block(self):
+        blocks, _ = convert.wikitext_to_blocks(
+            "[[File:Foo bild.png|thumb|300px]]", self.media())
+        self.assertEqual(len(blocks), 1)
+        image = blocks[0]["paragraph"]["blocks"][0]
+        self.assertEqual(image, {
+            "type": "Image",
+            "image": {"url": self.IMAGE_URL,
+                      "properties": {"altText": "Foo bild.png"}},
+        })
+        # Dimensions are deliberately omitted in v10.
+        self.assertNotIn("width", image["image"]["properties"])
+        self.assertNotIn("widthWithUnit", image["image"]["properties"])
+        self.assertNotIn("height", image["image"]["properties"])
+
+    def test_gallery_images_become_image_blocks(self):
+        blocks, _ = convert.wikitext_to_blocks(
+            "<gallery>\nFile:Foo_bild.png|caption\n</gallery>", self.media())
+        self.assertEqual(blocks[0]["paragraph"]["blocks"][0]["type"], "Image")
+
+    def test_inline_image_keeps_surrounding_text(self):
+        blocks, _ = convert.wikitext_to_blocks(
+            "Se [[File:Foo bild.png]] nu.", self.media())
+        self.assertEqual([b["type"] for b in blocks],
+                         ["Paragraph", "Paragraph", "Paragraph"])
+        self.assertEqual(blocks[1]["paragraph"]["blocks"][0]["type"], "Image")
+        self.assertEqual(texts(blocks[2]["paragraph"]["blocks"]),
+                         [("nu.", (), None)])
+
+    def test_mapped_pdf_becomes_hyperlink(self):
+        blocks, _ = convert.wikitext_to_blocks(
+            "[[File:Lathund konkurs.pdf]]", self.media())
+        self.assertEqual(len(blocks), 1)
+        self.assertEqual(texts(blocks[0]["paragraph"]["blocks"]),
+                         [("Lathund konkurs.pdf", (), self.PDF_URL)])
+
+    def test_unmapped_file_keeps_placeholder(self):
+        blocks, _ = convert.wikitext_to_blocks(
+            "[[File:Saknas.png|thumb]]", self.media())
+        joined = "".join(t["text"]["text"]
+                         for b in blocks for t in b["paragraph"]["blocks"])
+        self.assertIn("BILD SAKNAS", joined)
+        self.assertIn("Saknas.png", joined)
+
+    def test_table_cell_uses_hyperlink_not_image_block(self):
+        blocks, tables = convert.wikitext_to_blocks(
+            '{| class="wikitable"\n|-\n|Skärmbild\n'
+            '|[[File:Foo bild.png|thumb|300px]]\n|}', self.media())
+        self.assertEqual(tables, 1)
+        item = blocks[-1]["list"]["blocks"][0]
+        self.assertEqual([b["type"] for b in item["blocks"]], ["Text", "Text", "Text"])
+        self.assertEqual(item["blocks"][2]["text"]["hyperlink"], self.IMAGE_URL)
+        self.assertEqual(item["blocks"][2]["text"]["text"], "Foo bild.png")
+
+    def test_list_item_uses_hyperlink_not_image_block(self):
+        blocks, _ = convert.wikitext_to_blocks(
+            "* Bild: [[File:Foo bild.png]]", self.media())
+        item = blocks[0]["list"]["blocks"][0]
+        self.assertEqual([b["type"] for b in item["blocks"]], ["Text", "Text"])
+        self.assertEqual(item["blocks"][1]["text"]["hyperlink"], self.IMAGE_URL)
+
+    def test_wikitext_sizes_are_recorded(self):
+        sizes = {}
+        convert.wikitext_to_blocks(
+            "[[File:Foo bild.png|left|thumb|396x396px]]", self.media(), sizes,
+            "Artikel")
+        self.assertEqual(sizes, {"Foo bild.png": [
+            {"article": "Artikel", "rawOptions": "left|thumb|396x396px",
+             "pxWidth": 396}]})
+
+    def test_px_width(self):
+        self.assertEqual(convert.px_width(["thumb", "300px"]), 300)
+        self.assertEqual(convert.px_width(["396x396px"]), 396)
+        self.assertIsNone(convert.px_width(["thumb", "left"]))
+
+    def test_no_media_map_behaves_as_before(self):
+        with_map, _ = convert.wikitext_to_blocks("[[File:Foo bild.png]]", {})
+        without, _ = convert.wikitext_to_blocks("[[File:Foo bild.png]]")
+        self.assertEqual(with_map, without)
+        self.assertEqual(without, convert.placeholder_blocks("Foo bild.png"))
+
+    def test_load_media_map_missing_file_is_empty(self):
+        self.assertEqual(convert.load_media_map("does-not-exist.json"), {})
+
+
 class CategoryTests(unittest.TestCase):
     def test_first_category_wins(self):
         categories, rest = convert.extract_categories(
@@ -243,6 +345,17 @@ class GeneratedOutputTests(unittest.TestCase):
             self.skipTest("{0} not present".format(path))
         violations = convert.validate_file(path)
         self.assertEqual(violations, [])
+
+    def test_output_file_contains_image_blocks(self):
+        import json
+        import os
+        path = os.path.join(os.path.dirname(__file__) or ".",
+                             convert.DEFAULT_OUTPUT)
+        if not os.path.exists(path):
+            self.skipTest("{0} not present".format(path))
+        with open(path, encoding="utf-8") as handle:
+            data = json.load(handle)
+        self.assertGreater(convert.count_blocks(data, "Image"), 0)
 
 
 if __name__ == "__main__":

@@ -9,12 +9,18 @@ the tooling to turn it into a Genesys Knowledge JSON import file.
 | --- | --- |
 | `Alektum+Group-20260902114843.xml` | MediaWiki XML export (source of truth) |
 | `convert.py` | Converter (Python 3, standard library only) |
-| `genesys_full_migration_v9_final.json` | Generated Genesys import file |
-| `genesys_full_migration_v8_final.json` / `genesys_full_migration_v7_2.json` | Previous outputs, kept as formatting reference |
+| `genesys_full_migration_v10_final.json` | Generated Genesys import file (real images) |
+| `genesys_full_migration_v9_final.json` / `v8_final` / `v7_2` | Previous outputs, kept as formatting reference |
+| `build_media_url_map.py` | Builds `media_url_map.json` from the Genesys Response Asset search pages |
+| `ResponseAssetSearchRequest*.json` | Pages of the `POST /api/v2/responsemanagement/responseassets/search` response |
+| `media_url_map.json` / `media_url_coverage.json` | Generated filename → URL map and its coverage report |
+| `wiki_image_sizes.json` | Wikitext sizing options per image reference, recorded for a later sizing pass |
+| `genesys_url.json` | Older Content Management listing, used only as a fallback for non-image files |
 | `1 (7).json` | Small validated sample of the accepted import format |
 | `extract_media_manifest.py` | Extracts the media files referenced by the generated import file |
 | `required_media.txt` / `required_media.json` | Generated media manifest (see below) |
 | `test_convert.py` | Unit tests for the conversion rules |
+| `test_build_media_url_map.py` | Unit tests for the URL map builder |
 | `test_extract_media_manifest.py` | Unit tests for the media manifest extractor |
 
 ## Re-running the conversion
@@ -23,15 +29,21 @@ the tooling to turn it into a Genesys Knowledge JSON import file.
 python3 convert.py
 ```
 
-This reads `Alektum+Group-20260902114843.xml` and writes
-`genesys_full_migration_v9_final.json`, printing a summary of the number of
-articles, categories, labels and converted wikitables.
+This reads `Alektum+Group-20260902114843.xml` and `media_url_map.json` (when
+present) and writes `genesys_full_migration_v10_final.json` plus
+`wiki_image_sizes.json`, printing a summary of the number of articles,
+categories, labels, converted wikitables, mapped files, emitted image blocks
+and recorded sizing options.
 
 Other input/output paths can be supplied as arguments:
 
 ```bash
 python3 convert.py path/to/export.xml path/to/output.json
+python3 convert.py --media-map path/to/media_url_map.json
 ```
+
+If the map file does not exist the converter behaves exactly as before and
+every file reference keeps its 🔴 placeholder.
 
 Run the tests with:
 
@@ -99,16 +111,85 @@ reported, not an error.
 1. Extract the manifest: `python3 extract_media_manifest.py`.
 2. Match it against the local media collection:
    `python3 extract_media_manifest.py --check-local /path/to/media`.
-3. Upload **only** the matched subset to Genesys Cloud Content Management.
-4. Build a `filename → URL` map (JSON) from the upload results.
-5. Feed that map into a later conversion pass so the placeholders can be
-   replaced with real image/link blocks, falling back to the placeholder for
-   files that are still missing.
+3. Upload **only** the matched subset to Genesys as **Response Assets**
+   (Admin → Response Management → Library → Assets, or
+   `POST /api/v2/responsemanagement/responseassets/uploads`). Content
+   Management `sharingUri` links open a viewer page and cannot be embedded as
+   images, so they are only used as a fallback for non-image files.
+4. Save the pages of the asset search response as
+   `ResponseAssetSearchRequest*.json` and build the URL map:
+   `python3 build_media_url_map.py`.
+5. Re-run `python3 convert.py`, which replaces the placeholders of every
+   mapped file with a real image block or hyperlink and keeps the placeholder
+   for anything still missing.
+
+Note that `extract_media_manifest.py` derives the manifest from the *image
+placeholders*, so it reads `genesys_full_migration_v9_final.json` (the last
+all-placeholder output) by default rather than the current converter output.
 
 Run the tests with:
 
 ```bash
 python3 -m unittest test_extract_media_manifest -v
+```
+
+## Media URL map (Response Assets)
+
+```bash
+python3 build_media_url_map.py
+```
+
+`build_media_url_map.py` globs `ResponseAssetSearchRequest*.json` (so extra
+pages can simply be dropped in), merges their `results` arrays,
+de-duplicates by asset `id` and keys every asset by the canonical filename of
+`extract_media_manifest.canonical_key()` — which is what makes the uploaded
+`750px-Koer_redigerad_v2.jpg` match the article's
+`750px-Koer redigerad v2.jpg`. When two assets canonicalize to the same key
+the most recently created one (`dateCreated`) wins and the collision is
+recorded in the report.
+
+Outputs:
+
+| File | Description |
+| --- | --- |
+| `media_url_map.json` | `filename → {url, contentType, assetId, isImage}` |
+| `media_url_coverage.json` | Counts, unmapped required files, extra (unreferenced) assets and canonical-key collisions |
+
+Non-image files that were never uploaded as Response Assets fall back to the
+`sharingUri` of `genesys_url.json` (marked `"source": "contentManagement"`);
+images never do, because a viewer URL cannot be embedded.
+
+## Images in the generated import file
+
+With `media_url_map.json` present, `convert.py` emits, per file reference:
+
+* **mapped image** → a paragraph holding a Genesys `Image` block:
+
+  ```json
+  {"type": "Image", "image": {"url": "https://api-cdn.mypurecloud.de/response-assets/…",
+                              "properties": {"altText": "Foo.jpg"}}}
+  ```
+
+* **mapped document** (the 8 PDFs and the DOCX) → a paragraph with a
+  hyperlink whose display text is the filename;
+* **unmapped file** → the unchanged 🔴 placeholder, so a partial upload still
+  yields a valid, importable file;
+* **compact contexts** (table cells and list items), where only a flat run of
+  `Text` blocks is allowed and an `Image` block would not be valid → a
+  hyperlink to the image URL instead of an image block.
+
+**Image dimensions are deliberately omitted in v10.** No `width`,
+`widthWithUnit` or `height` is written, so Genesys applies each image's
+natural sizing and the result can be inspected visually before deciding
+whether explicit dimensions are needed. The wikitext sizing options are not
+lost: every `NNNpx` / `thumb` / alignment option is recorded per reference in
+`wiki_image_sizes.json` (`filename → [{article, rawOptions, pxWidth}]`) for a
+later sizing pass. Nothing consumes that file yet.
+
+Run the tests with:
+
+```bash
+python3 -m unittest test_build_media_url_map -v
 ```
 
 ## Conversion rules
@@ -132,8 +213,10 @@ python3 -m unittest test_extract_media_manifest -v
     are split so that every pair becomes its own line (`Afghanistan: AF`),
   * three or more columns → `First (Second) - Rest`.
 * `[[File:…]]` / `[[Fil:…]]` / `[[Image:…]]` / `[[Bild:…]]` references (and
-  `<gallery>` entries) are replaced in place with a visible placeholder so
-  editors know an image needs to be re-added manually:
+  `<gallery>` entries) become an image block or a hyperlink when the file is
+  in `media_url_map.json` (see above). Everything else is replaced in place
+  with a visible placeholder so editors know an image needs to be re-added
+  manually:
 
   ```
   🔴 BILD SAKNAS FRÅN WIKI-IMPORTEN 🔴
@@ -161,5 +244,5 @@ python3 -m unittest test_extract_media_manifest -v
   with:
 
   ```bash
-  python3 convert.py --validate genesys_full_migration_v9_final.json
+  python3 convert.py --validate genesys_full_migration_v10_final.json
   ```

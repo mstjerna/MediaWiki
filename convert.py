@@ -6,13 +6,18 @@ Usage:
 
 Defaults:
     input.xml   Alektum+Group-20260902114843.xml
-    output.json genesys_full_migration_v9_final.json
+    output.json genesys_full_migration_v10_final.json
+
+If `media_url_map.json` (see `build_media_url_map.py`) is present, mapped
+images become real Genesys Image blocks and mapped documents become
+hyperlinks; anything unmapped keeps the text placeholder.
 
 Only the Python standard library is used.
 """
 
 import html
 import json
+import os
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -20,7 +25,9 @@ import xml.etree.ElementTree as ET
 MW_NS = "{http://www.mediawiki.org/xml/export-0.11/}"
 
 DEFAULT_INPUT = "Alektum+Group-20260902114843.xml"
-DEFAULT_OUTPUT = "genesys_full_migration_v9_final.json"
+DEFAULT_OUTPUT = "genesys_full_migration_v10_final.json"
+DEFAULT_MEDIA_MAP = "media_url_map.json"
+DEFAULT_SIZES_OUTPUT = "wiki_image_sizes.json"
 
 DEFAULT_CATEGORY = "General"
 LABEL_COLOR = "#52e909"
@@ -56,6 +63,7 @@ RE_EXTLINK = re.compile(
 )
 RE_APOSTROPHES = re.compile(r"('''''|'''|'')")
 RE_CELL_ATTRS = re.compile(r"^[^|\[\]{}'<>]*=[^|]*\|")
+RE_PX_OPTION = re.compile(r"^(\d+)(?:x\d+)?px$", re.I)
 
 
 # --------------------------------------------------------------------------
@@ -133,9 +141,15 @@ def file_link_name(content):
     return rest.split("|")[0].strip()
 
 
+def file_link_options(content):
+    """Return the rendering options of a `[[File:...|thumb|300px]]` link."""
+    _, _, rest = content.partition(":")
+    return [option.strip() for option in rest.split("|")[1:]]
+
+
 def split_text_and_files(text):
-    """Split wikitext into a list of ("text", str) / ("file", filename)
-    segments, based on top-level file/image links."""
+    """Split wikitext into a list of ("text", str, []) / ("file", filename,
+    options) segments, based on top-level file/image links."""
     segments = []
     pos = 0
     for start, end, content in iter_wikilinks(text):
@@ -143,19 +157,20 @@ def split_text_and_files(text):
             continue
         before = text[pos:start]
         if before:
-            segments.append(("text", before))
-        segments.append(("file", file_link_name(content)))
+            segments.append(("text", before, []))
+        segments.append(("file", file_link_name(content), file_link_options(content)))
         pos = end
     tail = text[pos:]
     if tail or not segments:
-        segments.append(("text", tail))
+        segments.append(("text", tail, []))
     return segments
 
 
-def replace_file_links_compact(text):
-    """Replace top-level file/image links with an inline placeholder string,
+def replace_file_links_compact(text, media=None, sizes=None, article=None):
+    """Replace top-level file/image links with an inline replacement string,
     used where the surrounding structure (table cells, list items) cannot
-    hold separate placeholder paragraphs."""
+    hold separate paragraphs: a wiki external link when the file is mapped to
+    a URL, the compact placeholder otherwise."""
     pieces = []
     pos = 0
     for start, end, content in iter_wikilinks(text):
@@ -163,7 +178,8 @@ def replace_file_links_compact(text):
             continue
         pieces.append(text[pos:start])
         filename = file_link_name(content)
-        pieces.append(PLACEHOLDER_COMPACT.format(filename=filename))
+        record_wiki_size(sizes, article, filename, file_link_options(content))
+        pieces.append(compact_media_text(filename, media))
         pos = end
     pieces.append(text[pos:])
     return "".join(pieces)
@@ -188,20 +204,131 @@ def placeholder_blocks(filename):
 
 def gallery_filenames(gallery_lines):
     """Extract filenames from the body lines of a `<gallery>...</gallery>` block."""
-    names = []
+    return [name for name, _ in gallery_entries(gallery_lines)]
+
+
+def gallery_entries(gallery_lines):
+    """Extract (filename, options) from the body lines of a `<gallery>` block."""
+    entries = []
     for line in gallery_lines:
         stripped = line.strip()
         if not stripped:
             continue
-        name = stripped.split("|")[0].strip()
+        parts = stripped.split("|")
+        name = parts[0].strip()
         lower = name.lower()
         for prefix in FILE_LINK_PREFIXES:
             if lower.startswith(prefix):
                 name = name[len(prefix):].strip()
                 break
         if name:
-            names.append(name)
-    return names
+            entries.append((name, [option.strip() for option in parts[1:]]))
+    return entries
+
+
+# --------------------------------------------------------------------------
+# Media URL map (uploaded Genesys Response Assets)
+# --------------------------------------------------------------------------
+
+def canonical_key(name):
+    """Case-insensitive, space/underscore-insensitive matching key.
+
+    Delegates to `extract_media_manifest.canonical_key()` so the two modules
+    cannot drift apart; imported lazily because that module imports this one.
+    """
+    from extract_media_manifest import canonical_key as _canonical_key
+    return _canonical_key(name)
+
+
+def media_map_from_dict(raw):
+    """Re-key a `filename -> {url, contentType, isImage}` map by canonical
+    filename, dropping entries without a URL."""
+    media = {}
+    for name, entry in raw.items():
+        if not entry or not entry.get("url"):
+            continue
+        media[canonical_key(name)] = entry
+    return media
+
+
+def load_media_map(path):
+    """Load `media_url_map.json` (see `build_media_url_map.py`), keyed by
+    canonical filename. Returns an empty map when the file does not exist,
+    in which case every file reference keeps its placeholder."""
+    if not path or not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as handle:
+        raw = json.load(handle)
+    return media_map_from_dict(raw)
+
+
+def lookup_media(filename, media):
+    """Return the media map entry for a wiki filename, or None."""
+    if not media:
+        return None
+    return media.get(canonical_key(filename))
+
+
+def image_block(url, alt_text):
+    """A Genesys Image block.
+
+    `width`, `widthWithUnit` and `height` are deliberately omitted so Genesys
+    applies the image's natural sizing; the wikitext sizing options are
+    recorded in `wiki_image_sizes.json` for a possible later pass.
+    """
+    return {"type": "Image",
+            "image": {"url": url, "properties": {"altText": alt_text}}}
+
+
+def media_blocks(filename, media):
+    """Blocks emitted for one file reference in a block-level context:
+
+    * a mapped image  -> a paragraph holding an Image block,
+    * a mapped document (PDF/DOCX) -> a paragraph holding a hyperlink,
+    * anything unmapped -> the 🔴 placeholder paragraphs.
+    """
+    entry = lookup_media(filename, media)
+    if not entry:
+        return placeholder_blocks(filename)
+    if entry.get("isImage"):
+        return [paragraph([image_block(entry["url"], filename)])]
+    return [paragraph([text_block(filename, hyperlink=entry["url"])])]
+
+
+def compact_media_text(filename, media):
+    """The wikitext substituted for a file reference in a compact context
+    (table cell, list item), where only a flat run of Text blocks is allowed
+    and an Image block would not be valid: a link to the file when it is
+    mapped, the compact placeholder otherwise."""
+    entry = lookup_media(filename, media)
+    if entry:
+        return "[{0} {1}]".format(entry["url"], filename)
+    return PLACEHOLDER_COMPACT.format(filename=filename)
+
+
+def px_width(options):
+    """The pixel width requested by a wikitext option such as `300px` or
+    `396x396px`, or None."""
+    for option in options:
+        match = RE_PX_OPTION.match(option.strip())
+        if match:
+            return int(match.group(1))
+    return None
+
+
+def record_wiki_size(sizes, article, filename, options):
+    """Record the wikitext rendering options of one file reference.
+
+    Data-only: nothing consumes it yet, it is written to
+    `wiki_image_sizes.json` so explicit dimensions can be added later.
+    """
+    if sizes is None or not options:
+        return
+    sizes.setdefault(filename, []).append({
+        "article": article,
+        "rawOptions": "|".join(options),
+        "pxWidth": px_width(options),
+    })
 
 
 def split_marks(text):
@@ -378,9 +505,9 @@ def parse_table(lines):
     return caption, header, rows
 
 
-def row_to_blocks(cells):
+def row_to_blocks(cells, media=None, sizes=None, article=None):
     """Render one table row as the inline blocks of a list item."""
-    cells = [replace_file_links_compact(c) for c in cells]
+    cells = [replace_file_links_compact(c, media, sizes, article) for c in cells]
     while cells and not cells[-1].strip():
         cells.pop()
     if not cells:
@@ -430,7 +557,7 @@ def split_repeated_columns(header, rows):
     return header[:width], expanded
 
 
-def table_to_blocks(lines):
+def table_to_blocks(lines, media=None, sizes=None, article=None):
     caption, header, rows = parse_table(lines)
     header, rows = split_repeated_columns(header, rows)
     blocks = []
@@ -443,7 +570,7 @@ def table_to_blocks(lines):
         block = paragraph_from(heading, marks=["Bold"])
         if block:
             blocks.append(block)
-    items = [row_to_blocks(row) for row in rows]
+    items = [row_to_blocks(row, media, sizes, article) for row in rows]
     block = list_block(False, items)
     if block:
         blocks.append(block)
@@ -463,14 +590,17 @@ def extract_categories(text):
     return categories, RE_CATEGORY.sub("", text)
 
 
-def emit_text_or_placeholder(stripped, marks=None):
+def emit_text_or_placeholder(stripped, marks=None, media=None, sizes=None,
+                             article=None):
     """Split a line on file/image links and return the blocks to append:
-    normal paragraphs for surrounding text, full placeholder blocks for
-    each image reference."""
+    normal paragraphs for surrounding text, and for each file reference an
+    Image block, a hyperlink or the placeholder blocks (see
+    `media_blocks()`)."""
     blocks = []
-    for kind, content in split_text_and_files(stripped):
+    for kind, content, options in split_text_and_files(stripped):
         if kind == "file":
-            blocks.extend(placeholder_blocks(content))
+            record_wiki_size(sizes, article, content, options)
+            blocks.extend(media_blocks(content, media))
         else:
             block = paragraph_from(content, marks=marks)
             if block:
@@ -478,7 +608,7 @@ def emit_text_or_placeholder(stripped, marks=None):
     return blocks
 
 
-def wikitext_to_blocks(text):
+def wikitext_to_blocks(text, media=None, sizes=None, article=None):
     """Convert the body of a MediaWiki page into Genesys body blocks."""
     text = RE_COMMENT.sub("", text)
     lines = text.split("\n")
@@ -498,8 +628,9 @@ def wikitext_to_blocks(text):
                 index += 1
             if index < len(lines):
                 index += 1
-            for filename in gallery_filenames(gallery_lines):
-                blocks.extend(placeholder_blocks(filename))
+            for filename, options in gallery_entries(gallery_lines):
+                record_wiki_size(sizes, article, filename, options)
+                blocks.extend(media_blocks(filename, media))
             continue
 
         if stripped.startswith("{|"):
@@ -517,7 +648,7 @@ def wikitext_to_blocks(text):
                         break
                 table_lines.append(lines[index])
                 index += 1
-            blocks.extend(table_to_blocks(table_lines))
+            blocks.extend(table_to_blocks(table_lines, media, sizes, article))
             tables += 1
             continue
 
@@ -527,7 +658,8 @@ def wikitext_to_blocks(text):
 
         if stripped.startswith("="):
             heading = stripped.strip("=").strip()
-            blocks.extend(emit_text_or_placeholder(heading, marks=["Bold"]))
+            blocks.extend(emit_text_or_placeholder(
+                heading, marks=["Bold"], media=media, sizes=sizes, article=article))
             index += 1
             continue
 
@@ -538,7 +670,8 @@ def wikitext_to_blocks(text):
                 item = lines[index].strip()
                 if not item or item[0] not in "*#" or item[0] != marker:
                     break
-                item_text = replace_file_links_compact(item.lstrip("*#").strip())
+                item_text = replace_file_links_compact(
+                    item.lstrip("*#").strip(), media, sizes, article)
                 items.append(parse_inline(item_text))
                 index += 1
             block = list_block(marker == "#", items)
@@ -549,11 +682,13 @@ def wikitext_to_blocks(text):
         if stripped[0] in ";:":
             content = stripped.lstrip(";:").strip()
             blocks.extend(emit_text_or_placeholder(
-                content, marks=["Bold"] if stripped[0] == ";" else None))
+                content, marks=["Bold"] if stripped[0] == ";" else None,
+                media=media, sizes=sizes, article=article))
             index += 1
             continue
 
-        blocks.extend(emit_text_or_placeholder(stripped))
+        blocks.extend(emit_text_or_placeholder(
+            stripped, media=media, sizes=sizes, article=article))
         index += 1
 
     return sanitize_blocks(blocks), tables
@@ -583,7 +718,10 @@ def find_empty_block_lists(node, path=""):
     return violations
 
 
-def convert(input_path, output_path):
+def convert(input_path, output_path, media_map_path=DEFAULT_MEDIA_MAP,
+            sizes_path=DEFAULT_SIZES_OUTPUT):
+    media = load_media_map(media_map_path)
+    sizes = {}
     tree = ET.parse(input_path)
     pages = [p for p in tree.getroot().findall(MW_NS + "page")
              if (p.findtext(MW_NS + "ns") or "0") == "0"]
@@ -609,7 +747,7 @@ def convert(input_path, output_path):
             if label not in labels:
                 labels.append(label)
 
-        blocks, tables = wikitext_to_blocks(wikitext)
+        blocks, tables = wikitext_to_blocks(wikitext, media, sizes, title)
         tables_converted += tables
         if not blocks:
             # Genesys requires a non-empty body; pages that only contained
@@ -648,12 +786,30 @@ def convert(input_path, output_path):
     with open(output_path, "w", encoding="utf-8") as handle:
         json.dump(data, handle, ensure_ascii=False)
 
+    if sizes_path:
+        with open(sizes_path, "w", encoding="utf-8") as handle:
+            json.dump(sizes, handle, ensure_ascii=False, indent=2, sort_keys=True)
+            handle.write("\n")
+
     return {
         "articles": len(documents),
         "categories": len(data["categories"]),
         "labels": len(data["labels"]),
         "tables": tables_converted,
+        "mappedFiles": len(media),
+        "images": count_blocks(data, "Image"),
+        "sizedReferences": sum(len(entries) for entries in sizes.values()),
     }
+
+
+def count_blocks(node, block_type):
+    """Count the blocks of a given `type` anywhere in the document tree."""
+    if isinstance(node, dict):
+        total = 1 if node.get("type") == block_type else 0
+        return total + sum(count_blocks(value, block_type) for value in node.values())
+    if isinstance(node, list):
+        return sum(count_blocks(item, block_type) for item in node)
+    return 0
 
 
 def validate_file(path):
@@ -678,11 +834,26 @@ def main(argv):
         print("OK: no empty block lists found in {0}".format(path))
         return 0
 
-    input_path = argv[1] if len(argv) > 1 else DEFAULT_INPUT
-    output_path = argv[2] if len(argv) > 2 else DEFAULT_OUTPUT
-    summary = convert(input_path, output_path)
+    media_map_path = DEFAULT_MEDIA_MAP
+    positional = []
+    index = 1
+    while index < len(argv):
+        if argv[index] == "--media-map":
+            index += 1
+            if index >= len(argv):
+                print("Missing value for --media-map")
+                return 1
+            media_map_path = argv[index]
+        else:
+            positional.append(argv[index])
+        index += 1
+
+    input_path = positional[0] if positional else DEFAULT_INPUT
+    output_path = positional[1] if len(positional) > 1 else DEFAULT_OUTPUT
+    summary = convert(input_path, output_path, media_map_path)
     print("Wrote {0}".format(output_path))
-    for key in ("articles", "categories", "labels", "tables"):
+    for key in ("articles", "categories", "labels", "tables", "mappedFiles",
+                "images", "sizedReferences"):
         print("  {0}: {1}".format(key, summary[key]))
     return 0
 

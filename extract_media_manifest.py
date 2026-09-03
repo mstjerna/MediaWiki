@@ -14,7 +14,8 @@ Usage:
                                       [--match-report media_match_report.json]
 
 Defaults:
-    migration.json  genesys_full_migration_v9_final.json
+    migration.json  genesys_full_migration_v9_final.json (the last output in
+                    which every media reference is still a placeholder)
     export.xml      Alektum+Group-20260902114843.xml
 
 Outputs:
@@ -35,7 +36,10 @@ import convert
 from convert import (MW_NS, PLACEHOLDER_LABEL, PLACEHOLDER_TITLE,
                      RE_COMMENT, RE_GALLERY_CLOSE, RE_GALLERY_OPEN)
 
-DEFAULT_JSON = convert.DEFAULT_OUTPUT
+# The manifest is derived from the image *placeholders*, so it is pinned to
+# the last all-placeholder output rather than following `convert.DEFAULT_OUTPUT`
+# (v10 onwards emits real Image blocks for every uploaded file).
+DEFAULT_JSON = "genesys_full_migration_v9_final.json"
 DEFAULT_XML = convert.DEFAULT_INPUT
 
 DEFAULT_TXT_OUTPUT = "required_media.txt"
