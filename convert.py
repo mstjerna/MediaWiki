@@ -36,7 +36,8 @@ PLACEHOLDER_TITLE = "\U0001F534 BILD SAKNAS FR\u00c5N WIKI-IMPORTEN \U0001F534"
 PLACEHOLDER_LABEL = "Filreferens:"
 PLACEHOLDER_FOOTER = "L\u00e4gg till manuellt i Genesys Knowledge."
 PLACEHOLDER_COMPACT = (
-    PLACEHOLDER_TITLE + " \u2013 " + PLACEHOLDER_LABEL + " {filename} \u2013 " + PLACEHOLDER_FOOTER
+    PLACEHOLDER_TITLE + " " + PLACEHOLDER_LABEL + " '''{filename}''' "
+    + "\U0001F534 ''" + PLACEHOLDER_FOOTER + "'' \U0001F534"
 )
 
 RE_COMMENT = re.compile(r"<!--.*?-->", re.S)
@@ -169,17 +170,19 @@ def replace_file_links_compact(text):
 
 
 def placeholder_blocks(filename):
-    """The multi-paragraph placeholder emitted in place of a dropped image.
+    """The compact placeholder emitted in place of a dropped image.
 
     No blank spacer paragraphs are emitted: Genesys rejects any Paragraph
-    whose `blocks` array is empty, so the placeholder consists solely of
-    non-empty paragraphs.
+    whose `blocks` array is empty.
     """
     return [
         paragraph([text_block(PLACEHOLDER_TITLE, ["Bold"])]),
-        paragraph([text_block(PLACEHOLDER_LABEL)]),
-        paragraph([text_block(filename)]),
-        paragraph([text_block(PLACEHOLDER_FOOTER)]),
+        paragraph([text_block(PLACEHOLDER_LABEL + " "), text_block(filename, ["Bold"])]),
+        paragraph([
+            text_block("\U0001F534 "),
+            text_block(PLACEHOLDER_FOOTER, ["Italic"]),
+            text_block(" \U0001F534"),
+        ]),
     ]
 
 

@@ -109,8 +109,7 @@ class TableTests(unittest.TestCase):
 
 class ImagePlaceholderTests(unittest.TestCase):
     def paragraph_texts(self, blocks):
-        """Flatten a run of Paragraph blocks into a list of joined strings,
-        one per paragraph (empty string for blank placeholder paragraphs)."""
+        """Flatten a run of Paragraph blocks into one string per paragraph."""
         result = []
         for block in blocks:
             self.assertEqual(block["type"], "Paragraph")
@@ -121,11 +120,15 @@ class ImagePlaceholderTests(unittest.TestCase):
     def assert_placeholder(self, blocks, filename):
         self.assertEqual(
             self.paragraph_texts(blocks),
-            [convert.PLACEHOLDER_TITLE, convert.PLACEHOLDER_LABEL,
-             filename, convert.PLACEHOLDER_FOOTER],
+            [convert.PLACEHOLDER_TITLE, convert.PLACEHOLDER_LABEL + " " + filename,
+             "\U0001F534 " + convert.PLACEHOLDER_FOOTER + " \U0001F534"],
         )
         self.assertEqual(blocks[0]["paragraph"]["blocks"][0]["text"]["marks"],
                           ["Bold"])
+        self.assertEqual(
+            blocks[1]["paragraph"]["blocks"][1]["text"]["marks"], ["Bold"])
+        self.assertEqual(
+            blocks[2]["paragraph"]["blocks"][1]["text"]["marks"], ["Italic"])
         for block in blocks:
             self.assertTrue(block["paragraph"]["blocks"])
 
@@ -140,8 +143,8 @@ class ImagePlaceholderTests(unittest.TestCase):
         self.assertEqual(blocks[0]["type"], "Paragraph")
         self.assertEqual(texts(blocks[0]["paragraph"]["blocks"]),
                           [("Se bilden", (), None)])
-        self.assert_placeholder(blocks[1:5], "Foo.jpg")
-        self.assertEqual(texts(blocks[5]["paragraph"]["blocks"]),
+        self.assert_placeholder(blocks[1:4], "Foo.jpg")
+        self.assertEqual(texts(blocks[4]["paragraph"]["blocks"]),
                           [("för mer information.", (), None)])
 
     def test_image_with_nested_caption(self):
@@ -155,8 +158,8 @@ class ImagePlaceholderTests(unittest.TestCase):
             "File:One.png\n"
             "File:Two.png|caption text\n"
             "</gallery>")
-        self.assert_placeholder(blocks[0:4], "One.png")
-        self.assert_placeholder(blocks[4:8], "Two.png")
+        self.assert_placeholder(blocks[0:3], "One.png")
+        self.assert_placeholder(blocks[3:6], "Two.png")
 
     def test_image_in_table_cell(self):
         blocks, tables = convert.wikitext_to_blocks(
@@ -168,6 +171,8 @@ class ImagePlaceholderTests(unittest.TestCase):
         self.assertIn("BILD SAKNAS", joined)
         self.assertIn("Foo.jpg", joined)
         self.assertNotIn("[[File:", joined)
+        self.assertEqual(item["blocks"][2]["text"]["marks"], ["Bold"])
+        self.assertEqual(item["blocks"][4]["text"]["marks"], ["Italic"])
 
     def test_alternate_namespace_prefixes(self):
         for prefix in ("File", "Fil", "Image", "Bild", "file", "BILD"):

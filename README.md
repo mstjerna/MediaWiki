@@ -62,9 +62,8 @@ python3 -m unittest test_convert -v
 
   ```
   🔴 BILD SAKNAS FRÅN WIKI-IMPORTEN 🔴
-  Filreferens:
-  Foo.jpg
-  Lägg till manuellt i Genesys Knowledge.
+  Filreferens: **Foo.jpg**
+  🔴 *Lägg till manuellt i Genesys Knowledge.* 🔴
   ```
 
   The placeholder keeps only the bare filename (namespace prefix and all
@@ -72,8 +71,8 @@ python3 -m unittest test_convert -v
   Text surrounding an inline image reference is preserved as its own
   paragraph. Inside table cells (and list items), which are flattened to a
   single line, the placeholder is rendered as one compact sentence instead:
-  `🔴 BILD SAKNAS FRÅN WIKI-IMPORTEN 🔴 – Filreferens: Foo.jpg – Lägg till
-  manuellt i Genesys Knowledge.`
+  `🔴 BILD SAKNAS FRÅN WIKI-IMPORTEN 🔴 Filreferens: **Foo.jpg** 🔴 *Lägg till
+  manuellt i Genesys Knowledge.* 🔴`
 * Genesys rejects any `Paragraph` whose `paragraph.blocks` array is empty.
   The converter never emits one: the image placeholder above has no blank
   spacer paragraphs, and a final recursive sanitization pass
